@@ -4,16 +4,11 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="Added LvlInitializer">
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PlayerService.cs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Services/PlayerService.cs.meta" afterDir="false" />
+    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="Added Player">
       <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventBus.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventLists.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventLists.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/ServiceLocator/IService.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/ServiceLocator/IService.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/ServiceLocator/ServiceLocator.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/ServiceLocator/ServiceLocator.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" beforeDir="false" afterPath="$PROJECT_DIR$/ProjectSettings/Physics2DSettings.asset" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -22,6 +17,8 @@
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scripts/Services/EventBus/EventBus.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Views/CameraController.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a59c552c85f43a9bcaaf39eb0bf8b0d144600/ba/29b2f03c/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -95,7 +92,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715249596976</updated>
-      <workItem from="1715249599194" duration="6082000" />
+      <workItem from="1715249599194" duration="11265000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -113,7 +110,15 @@
       <option name="project" value="LOCAL" />
       <updated>1715251679464</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="Added Player">
+      <option name="closed" value="true" />
+      <created>1715256861668</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1715256861668</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -136,6 +141,7 @@
     <option name="CLEAR_INITIAL_COMMIT_MESSAGE" value="true" />
     <MESSAGE value="First Commit" />
     <MESSAGE value="Added LvlInitializer" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added LvlInitializer" />
+    <MESSAGE value="Added Player" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added Player" />
   </component>
 </project>
