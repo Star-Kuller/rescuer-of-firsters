@@ -4,13 +4,20 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="Camera WIP">
+    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="Added landing and take off from planet">
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2024_1_38_[Changes]/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2024_1_38_[Changes]1/shelved.patch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2024_1_38__Changes_.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/shelf/Uncommitted_changes_before_Update_at_10_05_2024_1_38__Changes_1.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views.meta" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CameraController.cs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CameraController.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs.meta" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs.meta" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventBus.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -27,10 +34,14 @@
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scripts/Services/EventBus/EventBus.cs" root0="SKIP_HIGHLIGHTING" />
-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock://C:/MyProjects/rescuer of firsters/ProjectSettings/Physics2DSettings.asset" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a59c552c85f43a9bcaaf39eb0bf8b0d144600/ba/29b2f03c/Component.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock://diff.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
   <component name="ProjectId" id="2gE4q3HvTYVwjhPGJUBvDAcLtsI" />
@@ -84,10 +95,10 @@
       </option>
       <method v="2" />
     </configuration>
-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
+    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21572">
       <option name="allowRunningInParallel" value="false" />
       <option name="listenPortForConnections" value="false" />
-      <option name="pid" />
+      <option name="pid" value="21572" />
       <option name="projectPathOnTarget" />
       <option name="selectedOptions">
         <list />
@@ -103,7 +114,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1715249596976</updated>
-      <workItem from="1715249599194" duration="13706000" />
+      <workItem from="1715249599194" duration="25759000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -145,7 +156,23 @@
       <option name="project" value="LOCAL" />
       <updated>1715269967932</updated>
     </task>
-    <option name="localTasksCounter" value="6" />
+    <task id="LOCAL-00006" summary="Fixed planet gravity">
+      <option name="closed" value="true" />
+      <created>1715272410347</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1715272410347</updated>
+    </task>
+    <task id="LOCAL-00007" summary="Added landing and take off from planet">
+      <option name="closed" value="true" />
+      <created>1715294908377</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1715294908377</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -170,6 +197,8 @@
     <MESSAGE value="Added LvlInitializer" />
     <MESSAGE value="Added Player" />
     <MESSAGE value="Camera WIP" />
-    <option name="LAST_COMMIT_MESSAGE" value="Camera WIP" />
+    <MESSAGE value="Fixed planet gravity" />
+    <MESSAGE value="Added landing and take off from planet" />
+    <option name="LAST_COMMIT_MESSAGE" value="Added landing and take off from planet" />
   </component>
 </project>

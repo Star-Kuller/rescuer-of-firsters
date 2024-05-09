@@ -1,0 +1,163 @@
+Index: Assets/Scripts/Models/PlanetModel.cs.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Models/PlanetModel.cs.meta b/Assets/Scripts/Views/CameraController.cs.meta
+rename from Assets/Scripts/Models/PlanetModel.cs.meta
+rename to Assets/Scripts/Views/CameraController.cs.meta
+--- a/Assets/Scripts/Models/PlanetModel.cs.meta	
++++ b/Assets/Scripts/Views/CameraController.cs.meta	
+@@ -1,5 +1,5 @@
+ fileFormatVersion: 2
+-guid: aaae4b655b120d945a576ac025c60386
++guid: 9d4eb5ac2decdf64cab00af7f4ddd1e6
+ MonoImporter:
+   externalObjects: {}
+   serializedVersion: 2
+Index: .idea/.idea.Rescuer of Firsters/.idea/workspace.xml
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+><?xml version=\"1.0\" encoding=\"UTF-8\"?>\r\n<project version=\"4\">\r\n  <component name=\"AutoImportSettings\">\r\n    <option name=\"autoReloadType\" value=\"SELECTIVE\" />\r\n  </component>\r\n  <component name=\"ChangeListManager\">\r\n    <list default=\"true\" id=\"7c81e9f9-6dbc-4efb-8809-8fa238829baf\" name=\"Changes\" comment=\"Camera WIP\">\r\n      <change beforePath=\"$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs\" beforeDir=\"false\" afterPath=\"$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs\" afterDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs\" beforeDir=\"false\" />\r\n      <change beforePath=\"$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs.meta\" beforeDir=\"false\" />\r\n    </list>\r\n    <option name=\"SHOW_DIALOG\" value=\"false\" />\r\n    <option name=\"HIGHLIGHT_CONFLICTS\" value=\"true\" />\r\n    <option name=\"HIGHLIGHT_NON_ACTIVE_CHANGELIST\" value=\"false\" />\r\n    <option name=\"LAST_RESOLUTION\" value=\"IGNORE\" />\r\n  </component>\r\n  <component name=\"Git.Settings\">\r\n    <option name=\"RECENT_BRANCH_BY_REPOSITORY\">\r\n      <map>\r\n        <entry key=\"$PROJECT_DIR$\" value=\"Camera\" />\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"HighlightingSettingsPerFile\">\r\n    <setting file=\"mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/MyProjects/rescuer of firsters/Assets/Scripts/Services/EventBus/EventBus.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs\" root0=\"FORCE_HIGHLIGHTING\" />\r\n    <setting file=\"mock://C:/MyProjects/rescuer of firsters/ProjectSettings/Physics2DSettings.asset\" root0=\"SKIP_HIGHLIGHTING\" />\r\n    <setting file=\"file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a59c552c85f43a9bcaaf39eb0bf8b0d144600/ba/29b2f03c/Component.cs\" root0=\"SKIP_HIGHLIGHTING\" />\r\n  </component>\r\n  <component name=\"MetaFilesCheckinStateConfiguration\" checkMetaFiles=\"true\" />\r\n  <component name=\"ProjectId\" id=\"2gE4q3HvTYVwjhPGJUBvDAcLtsI\" />\r\n  <component name=\"ProjectViewState\">\r\n    <option name=\"hideEmptyMiddlePackages\" value=\"true\" />\r\n    <option name=\"showLibraryContents\" value=\"true\" />\r\n  </component>\r\n  <component name=\"PropertiesComponent\"><![CDATA[{\r\n  \"keyToString\": {\r\n    \"RunOnceActivity.OpenProjectViewOnStart\": \"true\",\r\n    \"RunOnceActivity.ShowReadmeOnStart\": \"true\",\r\n    \"WebServerToolWindowFactoryState\": \"false\",\r\n    \"node.js.detected.package.eslint\": \"true\",\r\n    \"node.js.detected.package.tslint\": \"true\",\r\n    \"node.js.selected.package.eslint\": \"(autodetect)\",\r\n    \"node.js.selected.package.tslint\": \"(autodetect)\",\r\n    \"vue.rearranger.settings.migration\": \"true\"\r\n  },\r\n  \"keyToStringList\": {\r\n    \"rider.external.source.directories\": [\r\n      \"C:\\\\Users\\\\Дмитрий\\\\AppData\\\\Roaming\\\\JetBrains\\\\Rider2023.1\\\\resharper-host\\\\DecompilerCache\",\r\n      \"C:\\\\Users\\\\Дмитрий\\\\AppData\\\\Roaming\\\\JetBrains\\\\Rider2023.1\\\\resharper-host\\\\SourcesCache\",\r\n      \"C:\\\\Users\\\\Дмитрий\\\\AppData\\\\Local\\\\Symbols\\\\src\"\r\n    ]\r\n  }\r\n}]]></component>\r\n  <component name=\"RunManager\" selected=\"Attach to Unity Editor.Attach to Unity Editor\">\r\n    <configuration name=\"Start Unity\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2021.1.24f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-projectPath &quot;C:\\MyProjects\\rescuer of firsters&quot; -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\MyProjects\\rescuer of firsters\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Unit Tests (batch mode)\" type=\"RunUnityExe\" factoryName=\"Unity Executable\">\r\n      <option name=\"EXE_PATH\" value=\"C:\\Program Files\\Unity\\Hub\\Editor\\2021.1.24f1\\Editor\\Unity.exe\" />\r\n      <option name=\"PROGRAM_PARAMETERS\" value=\"-runTests -batchmode -projectPath &quot;C:\\MyProjects\\rescuer of firsters&quot; -testResults Logs/results.xml -testPlatform EditMode -debugCodeOptimization\" />\r\n      <option name=\"WORKING_DIRECTORY\" value=\"C:\\MyProjects\\rescuer of firsters\" />\r\n      <option name=\"PASS_PARENT_ENVS\" value=\"1\" />\r\n      <option name=\"USE_EXTERNAL_CONSOLE\" value=\"0\" />\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor &amp; Play\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"UNITY_ATTACH_AND_PLAY\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n    <configuration name=\"Attach to Unity Editor\" type=\"UNITY_DEBUG_RUN_CONFIGURATION\" factoryName=\"Unity Debug\" show_console_on_std_err=\"false\" show_console_on_std_out=\"false\" port=\"50000\" address=\"localhost\">\r\n      <option name=\"allowRunningInParallel\" value=\"false\" />\r\n      <option name=\"listenPortForConnections\" value=\"false\" />\r\n      <option name=\"pid\" />\r\n      <option name=\"projectPathOnTarget\" />\r\n      <option name=\"selectedOptions\">\r\n        <list />\r\n      </option>\r\n      <method v=\"2\" />\r\n    </configuration>\r\n  </component>\r\n  <component name=\"SpellCheckerSettings\" RuntimeDictionaries=\"0\" Folders=\"0\" CustomDictionaries=\"0\" DefaultDictionary=\"application-level\" UseSingleDictionary=\"true\" transferred=\"true\" />\r\n  <component name=\"TaskManager\">\r\n    <task active=\"true\" id=\"Default\" summary=\"Default task\">\r\n      <changelist id=\"7c81e9f9-6dbc-4efb-8809-8fa238829baf\" name=\"Changes\" comment=\"\" />\r\n      <created>1715249596976</created>\r\n      <option name=\"number\" value=\"Default\" />\r\n      <option name=\"presentableId\" value=\"Default\" />\r\n      <updated>1715249596976</updated>\r\n      <workItem from=\"1715249599194\" duration=\"13706000\" />\r\n    </task>\r\n    <task id=\"LOCAL-00001\" summary=\"First Commit\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715250017917</created>\r\n      <option name=\"number\" value=\"00001\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00001\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715250017918</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00002\" summary=\"Added LvlInitializer\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715251679464</created>\r\n      <option name=\"number\" value=\"00002\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00002\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715251679464</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00003\" summary=\"Added Player\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715256861668</created>\r\n      <option name=\"number\" value=\"00003\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00003\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715256861668</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00004\" summary=\"Camera WIP\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715269891198</created>\r\n      <option name=\"number\" value=\"00004\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00004\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715269891198</updated>\r\n    </task>\r\n    <task id=\"LOCAL-00005\" summary=\"Camera WIP\">\r\n      <option name=\"closed\" value=\"true\" />\r\n      <created>1715269967932</created>\r\n      <option name=\"number\" value=\"00005\" />\r\n      <option name=\"presentableId\" value=\"LOCAL-00005\" />\r\n      <option name=\"project\" value=\"LOCAL\" />\r\n      <updated>1715269967932</updated>\r\n    </task>\r\n    <option name=\"localTasksCounter\" value=\"6\" />\r\n    <servers />\r\n  </component>\r\n  <component name=\"TypeScriptGeneratedFilesManager\">\r\n    <option name=\"version\" value=\"3\" />\r\n  </component>\r\n  <component name=\"UnityCheckinConfiguration\" checkUnsavedScenes=\"true\" />\r\n  <component name=\"UnityProjectConfiguration\" hasMinimizedUI=\"true\" />\r\n  <component name=\"Vcs.Log.Tabs.Properties\">\r\n    <option name=\"TAB_STATES\">\r\n      <map>\r\n        <entry key=\"MAIN\">\r\n          <value>\r\n            <State />\r\n          </value>\r\n        </entry>\r\n      </map>\r\n    </option>\r\n  </component>\r\n  <component name=\"VcsManagerConfiguration\">\r\n    <option name=\"CLEAR_INITIAL_COMMIT_MESSAGE\" value=\"true\" />\r\n    <MESSAGE value=\"First Commit\" />\r\n    <MESSAGE value=\"Added LvlInitializer\" />\r\n    <MESSAGE value=\"Added Player\" />\r\n    <MESSAGE value=\"Camera WIP\" />\r\n    <option name=\"LAST_COMMIT_MESSAGE\" value=\"Camera WIP\" />\r\n  </component>\r\n</project>
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml b/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml
+--- a/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml	
++++ b/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml	
+@@ -4,13 +4,14 @@
+     <option name="autoReloadType" value="SELECTIVE" />
+   </component>
+   <component name="ChangeListManager">
+-    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="Camera WIP">
++    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="Fixed planet gravity">
++      <change afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CameraController.cs" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/LvlInitializer.cs" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Materials.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views.meta" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs" afterDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs.meta" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CameraController.cs.meta" afterDir="false" />
+       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" afterDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs" beforeDir="false" />
+-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs.meta" beforeDir="false" />
++      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventBus.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Services/EventBus/EventBus.cs" afterDir="false" />
+     </list>
+     <option name="SHOW_DIALOG" value="false" />
+     <option name="HIGHLIGHT_CONFLICTS" value="true" />
+@@ -27,8 +28,10 @@
+   <component name="HighlightingSettingsPerFile">
+     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
+     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
++    <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
++    <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
++    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scripts/Services/EventBus/EventBus.cs" root0="SKIP_HIGHLIGHTING" />
+-    <setting file="file://$PROJECT_DIR$/Assets/Scripts/Services/PlanetService.cs" root0="FORCE_HIGHLIGHTING" />
+     <setting file="mock://C:/MyProjects/rescuer of firsters/ProjectSettings/Physics2DSettings.asset" root0="SKIP_HIGHLIGHTING" />
+     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a59c552c85f43a9bcaaf39eb0bf8b0d144600/ba/29b2f03c/Component.cs" root0="SKIP_HIGHLIGHTING" />
+   </component>
+@@ -84,10 +87,10 @@
+       </option>
+       <method v="2" />
+     </configuration>
+-    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost">
++    <configuration name="Attach to Unity Editor" type="UNITY_DEBUG_RUN_CONFIGURATION" factoryName="Unity Debug" show_console_on_std_err="false" show_console_on_std_out="false" port="50000" address="localhost" ignored-value-for-modified-check="21572">
+       <option name="allowRunningInParallel" value="false" />
+       <option name="listenPortForConnections" value="false" />
+-      <option name="pid" />
++      <option name="pid" value="21572" />
+       <option name="projectPathOnTarget" />
+       <option name="selectedOptions">
+         <list />
+@@ -103,7 +106,7 @@
+       <option name="number" value="Default" />
+       <option name="presentableId" value="Default" />
+       <updated>1715249596976</updated>
+-      <workItem from="1715249599194" duration="13706000" />
++      <workItem from="1715249599194" duration="24385000" />
+     </task>
+     <task id="LOCAL-00001" summary="First Commit">
+       <option name="closed" value="true" />
+@@ -145,7 +148,15 @@
+       <option name="project" value="LOCAL" />
+       <updated>1715269967932</updated>
+     </task>
+-    <option name="localTasksCounter" value="6" />
++    <task id="LOCAL-00006" summary="Fixed planet gravity">
++      <option name="closed" value="true" />
++      <created>1715272410347</created>
++      <option name="number" value="00006" />
++      <option name="presentableId" value="LOCAL-00006" />
++      <option name="project" value="LOCAL" />
++      <updated>1715272410347</updated>
++    </task>
++    <option name="localTasksCounter" value="7" />
+     <servers />
+   </component>
+   <component name="TypeScriptGeneratedFilesManager">
+@@ -170,6 +181,26 @@
+     <MESSAGE value="Added LvlInitializer" />
+     <MESSAGE value="Added Player" />
+     <MESSAGE value="Camera WIP" />
+-    <option name="LAST_COMMIT_MESSAGE" value="Camera WIP" />
++    <MESSAGE value="Fixed planet gravity" />
++    <option name="LAST_COMMIT_MESSAGE" value="Fixed planet gravity" />
++  </component>
++  <component name="XDebuggerManager">
++    <breakpoint-manager>
++      <breakpoints>
++        <line-breakpoint enabled="true" type="DotNet Breakpoints">
++          <url>file://$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs</url>
++          <line>133</line>
++          <properties documentPath="C:\MyProjects\rescuer of firsters\Assets\Scripts\Models\PlayerModel.cs" initialLine="130" containingFunctionPresentation="Method 'Jump'">
++            <startOffsets>
++              <option value="3981" />
++            </startOffsets>
++            <endOffsets>
++              <option value="4020" />
++            </endOffsets>
++          </properties>
++          <option name="timeStamp" value="4" />
++        </line-breakpoint>
++      </breakpoints>
++    </breakpoint-manager>
+   </component>
+ </project>
+\ No newline at end of file
+Index: Assets/Materials.meta
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Materials.meta b/Assets/Scripts/Views.meta
+rename from Assets/Materials.meta
+rename to Assets/Scripts/Views.meta
+--- a/Assets/Materials.meta	
++++ b/Assets/Scripts/Views.meta	
+@@ -1,5 +1,5 @@
+ fileFormatVersion: 2
+-guid: d3147ab968274f54394ae932be43e141
++guid: 922760c7c588f494ab251efd22320812
+ folderAsset: yes
+ DefaultImporter:
+   externalObjects: {}
+Index: ProjectSettings/TagManager.asset
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\r\n%TAG !u! tag:unity3d.com,2011:\r\n--- !u!78 &1\r\nTagManager:\r\n  serializedVersion: 2\r\n  tags: []\r\n  layers:\r\n  - Default\r\n  - TransparentFX\r\n  - Ignore Raycast\r\n  - \r\n  - Water\r\n  - UI\r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  - \r\n  m_SortingLayers:\r\n  - name: Default\r\n    uniqueID: 0\r\n    locked: 0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/ProjectSettings/TagManager.asset b/ProjectSettings/TagManager.asset
+--- a/ProjectSettings/TagManager.asset	
++++ b/ProjectSettings/TagManager.asset	
+@@ -3,7 +3,8 @@
+ --- !u!78 &1
+ TagManager:
+   serializedVersion: 2
+-  tags: []
++  tags:
++  - Planet
+   layers:
+   - Default
+   - TransparentFX

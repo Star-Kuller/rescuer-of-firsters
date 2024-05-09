@@ -1,30 +1,41 @@
+using System;
 using Services;
 using UnityEngine;
-using UnityEngine.Serialization;
 
 namespace Models
 {
+    [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerModel : MonoBehaviour
     {
         public float Thrust { get; set; }
         public float Fuel { get; set; }
-
         public float MaxFuel { get; set; }
+        public float JumpForce { get; set; }
+        public bool IsOnPlanet { get; private set; } = false;
         public float MaxSpeed { get; set; }
 
         private Camera _camera;
         private Rigidbody2D _rb;
+        private Vector2 _contactPoint;
+        private GameObject _planet;
 
         //Инспектор
-        [Tooltip("Мощность двигателя")]
+        [Header("Эти параметры невозможно изменить когда игра запущена", order = 0)]
+        [Header("Мощность двигателя")]
         [SerializeField]
+        [Range(0, 15)]
         private float startThrust;
         
-        [Tooltip("Начальное топливо")]
+        [Header("Импульс при старте с планеты")]
+        [SerializeField]
+        private float jumpForce;
+        
+        [Space]
+        [Header("Начальное топливо")]
         [SerializeField]
         private float startFuel;
 
-        [Tooltip("Расход топлива в секунду")]
+        [Header("Расход топлива в секунду")]
         [SerializeField]
         private float fuelConsumption;
         [Tooltip("Расход топлива в секунду")]
@@ -38,14 +49,38 @@ namespace Models
             Fuel = startFuel;
             MaxFuel = startFuel;
             Thrust = startThrust;
+            JumpForce = jumpForce;
             MaxSpeed = maxSpeed;
             var services = ServiceLocator.Current;
         }
         
         private void FixedUpdate()
         {
-            Rotate();
-            MoveForward();
+            if (IsOnPlanet)
+            {
+                StayOnPlanet();
+                Jump();
+            }
+            else
+            {
+                Rotate();
+                MoveForward();
+            }
+        }
+
+        private void OnCollisionEnter2D(Collision2D other)
+        {
+            if (!other.gameObject.CompareTag("Planet")) return; 
+            IsOnPlanet = true;
+            var contact = other.GetContact(0);
+            _planet = other.gameObject;
+            _contactPoint = _planet.transform.InverseTransformPoint(contact.point);
+        }
+
+        private void OnCollisionExit2D(Collision2D other)
+        {
+            if (!other.gameObject.CompareTag("Planet")) return; 
+            IsOnPlanet = false;
         }
 
         private void Rotate()
@@ -58,15 +93,15 @@ namespace Models
 
             transform.up = direction;
         }
-
-        // ReSharper disable Unity.PerformanceAnalysis
+        
         private void MoveForward()
         {
             var moveForwardKey = KeyCode.W; // по умолчанию используем W
+    
             if (PlayerPrefs.HasKey("MoveForwardKey"))
             {
                 var keyName = PlayerPrefs.GetString("MoveForwardKey");
-                moveForwardKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keyName);
+                moveForwardKey = (KeyCode)Enum.Parse(typeof(KeyCode), keyName);
             }
             if (_rb.velocity.magnitude > MaxSpeed)
                 _rb.velocity = _rb.velocity.normalized * MaxSpeed;
@@ -78,9 +113,32 @@ namespace Models
             }
             
             if (!Input.GetKey(moveForwardKey)) return;
-            //Debug.Log(Fuel);
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
+        }
+
+        private void StayOnPlanet()
+        {
+            transform.position =
+                _planet.transform.TransformPoint(
+                    new Vector3(_contactPoint.x, _contactPoint.y, 0));
+            
+            var directionToCenter =  _planet.transform.position - transform.position;
+            transform.up = -directionToCenter.normalized;
+        }
+
+        private void Jump()
+        {
+            var jumpKey = KeyCode.Space;
+            if (PlayerPrefs.HasKey("jumpKey"))
+            {
+                var keyName = PlayerPrefs.GetString("jumpKey");
+                jumpKey = (KeyCode)Enum.Parse(typeof(KeyCode), keyName);
+            }
+
+            if (!Input.GetKey(jumpKey)) return;
+            _rb.AddForce(transform.up * JumpForce);
+            IsOnPlanet = false;
         }
     }
 }
