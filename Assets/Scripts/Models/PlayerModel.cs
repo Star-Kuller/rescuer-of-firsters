@@ -10,7 +10,7 @@ namespace Models
         public float Fuel { get; set; }
 
         public float MaxFuel { get; set; }
-        
+
         private Camera _camera;
         private Rigidbody2D _rb;
 
@@ -22,7 +22,7 @@ namespace Models
         [Tooltip("Начальное топливо")]
         [SerializeField]
         private float startFuel;
-        
+
         [Tooltip("Расход топлива в секунду")]
         [SerializeField]
         private float fuelConsumption;
@@ -39,6 +39,7 @@ namespace Models
         
         private void FixedUpdate()
         {
+            
             Rotate();
             MoveForward();
         }
@@ -68,11 +69,12 @@ namespace Models
             if (Fuel <= 0)
             {
                 Fuel = 0;
+                Fuel = MaxFuel;
                 return;
             }
             
             if (!Input.GetKey(moveForwardKey)) return;
-            Debug.Log(Fuel);
+            //Debug.Log(Fuel);
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
         }
