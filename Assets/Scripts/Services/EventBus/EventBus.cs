@@ -1,9 +1,9 @@
 using System;
 using System.Collections.Generic;
-using ServiceLocator;
+using Services.ServiceLocator;
 using UnityEngine.Events;
 
-namespace EventBus
+namespace Services.EventBus
 {
     public class EventBus : IService
     {

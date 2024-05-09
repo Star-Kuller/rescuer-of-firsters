@@ -1,4 +1,4 @@
-namespace ServiceLocator
+namespace Services.ServiceLocator
 {
     public interface IService
     { }
