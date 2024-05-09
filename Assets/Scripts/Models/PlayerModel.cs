@@ -72,7 +72,7 @@ namespace Models
             }
             
             if (!Input.GetKey(moveForwardKey)) return;
-            Debug.Log(Fuel);
+            //Debug.Log(Fuel);
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
         }
