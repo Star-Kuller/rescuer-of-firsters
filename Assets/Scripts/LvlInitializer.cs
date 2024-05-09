@@ -9,6 +9,5 @@ public class LvlInitializer : MonoBehaviour
         
         services.TryRegister(new EventBus());
         services.TryRegister(new PlayerService());
-        services.TryRegister(new PlanetService());
     }
 }

@@ -1,46 +1,43 @@
-using System.Collections;
 using System.Collections.Generic;
-using Services;
-using UnityEditor.VersionControl;
 using UnityEngine;
 
-public class PlanetModel : MonoBehaviour, IService
+namespace Models
 {
-    private Camera _camera;
-    private Rigidbody2D _rb;
-    private HashSet<Rigidbody> affectedBodies = new HashSet<Rigidbody>();
-    // Start is called before the first frame update
-    void Start()
+    public class PlanetModel : MonoBehaviour
     {
-        _camera = Camera.main;
-        _rb = transform.GetComponent<Rigidbody2D>();
-        var services = ServiceLocator.Current;
-    }
-    private void OnTriggerEnter(Collider other)
-    {
-        Debug.Log("oooo");
-        if (other.attachedRigidbody != null)
+        private readonly HashSet<Rigidbody2D> _affectedBodies = new HashSet<Rigidbody2D>();
+        
+        [Tooltip("Масса планеты")]
+        [SerializeField]
+        private float mass;
+        
+        private void OnTriggerEnter2D(Collider2D other)
         {
-            affectedBodies.Add(other.attachedRigidbody);
+            if (other.attachedRigidbody != null)
+            {
+                _affectedBodies.Add(other.attachedRigidbody);
+            }
         }
-    }
-    private void OnTriggerExit(Collider other)
-    {
-        if(other.attachedRigidbody != null)
+        
+        private void OnTriggerExit2D(Collider2D other)
         {
-            affectedBodies.Remove(other.attachedRigidbody);
+            if(other.attachedRigidbody != null)
+            {
+                _affectedBodies.Remove(other.attachedRigidbody);
+            }
         }
-    }
-    // Update is called once per frame
-    void Update()
-    {
-        Debug.Log("l");
-
-        foreach (Rigidbody body in affectedBodies)
+        
+        private void FixedUpdate()
         {
-            Debug.Log("j");
-            Vector3 directionToPlanet = (transform.position - body.position).normalized;
-            body.AddForce(directionToPlanet * -1000);
+            foreach (var body in _affectedBodies)
+            {
+                var position = new Vector2(transform.position.x, transform.position.y);
+                var directionToPlanet = (position - body.position).normalized;
+                
+                var distanceSqr = (position - body.position).sqrMagnitude; 
+                var strength = 10 * mass * body.mass / distanceSqr;
+                body.AddForce(directionToPlanet * strength);
+            }
         }
     }
 }

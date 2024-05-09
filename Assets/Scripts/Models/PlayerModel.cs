@@ -4,7 +4,7 @@ using UnityEngine.Serialization;
 
 namespace Models
 {
-    public class PlayerModel : MonoBehaviour, IService
+    public class PlayerModel : MonoBehaviour
     {
         public float Thrust { get; set; }
         public float Fuel { get; set; }
