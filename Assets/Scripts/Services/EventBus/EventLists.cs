@@ -1,4 +1,4 @@
-namespace Services.EventBus
+namespace Services
 {
     public enum EventList
     {

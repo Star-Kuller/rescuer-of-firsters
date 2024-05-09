@@ -1,5 +1,4 @@
-using Services.EventBus;
-using Services.ServiceLocator;
+using Services;
 using UnityEngine;
 
 public class LvlInitializer : MonoBehaviour
@@ -9,6 +8,6 @@ public class LvlInitializer : MonoBehaviour
         var services = ServiceLocator.Current;
         
         services.TryRegister(new EventBus());
-        
+        services.TryRegister(new PlayerService());
     }
 }
