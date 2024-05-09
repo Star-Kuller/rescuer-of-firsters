@@ -10,6 +10,7 @@ namespace Models
         public float Fuel { get; set; }
 
         public float MaxFuel { get; set; }
+        public float MaxSpeed { get; set; }
 
         private Camera _camera;
         private Rigidbody2D _rb;
@@ -26,6 +27,9 @@ namespace Models
         [Tooltip("Расход топлива в секунду")]
         [SerializeField]
         private float fuelConsumption;
+        [Tooltip("Расход топлива в секунду")]
+        [SerializeField]
+        private float maxSpeed;
 
         private void Start()
         {
@@ -34,12 +38,12 @@ namespace Models
             Fuel = startFuel;
             MaxFuel = startFuel;
             Thrust = startThrust;
+            MaxSpeed = maxSpeed;
             var services = ServiceLocator.Current;
         }
         
         private void FixedUpdate()
         {
-            
             Rotate();
             MoveForward();
         }
@@ -59,13 +63,13 @@ namespace Models
         private void MoveForward()
         {
             var moveForwardKey = KeyCode.W; // по умолчанию используем W
-    
             if (PlayerPrefs.HasKey("MoveForwardKey"))
             {
                 var keyName = PlayerPrefs.GetString("MoveForwardKey");
                 moveForwardKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keyName);
             }
-
+            if (_rb.velocity.magnitude > MaxSpeed)
+                _rb.velocity = _rb.velocity.normalized * MaxSpeed;
             if (Fuel <= 0)
             {
                 Fuel = 0;
