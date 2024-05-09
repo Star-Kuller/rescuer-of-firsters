@@ -29,6 +29,16 @@ namespace Services
         {
             _events[eventId].AddListener(action);
         }
+        
+        /// <summary>
+        /// Отписаться от события
+        /// </summary>
+        /// <param name="eventId">Индефикатор события</param>
+        /// <param name="action">Метод, который нужно отписать</param>
+        public void UnSubscribe(EventList eventId, UnityAction action)
+        {
+            _events[eventId].RemoveListener(action);
+        }
 
         /// <summary>
         /// Вызвать событие

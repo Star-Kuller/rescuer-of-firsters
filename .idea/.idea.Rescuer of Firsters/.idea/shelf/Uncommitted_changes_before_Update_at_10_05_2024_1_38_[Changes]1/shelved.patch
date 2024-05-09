@@ -1,0 +1,1021 @@
+Index: Assets/Scenes/SampleScene.unity
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>%YAML 1.1\r\n%TAG !u! tag:unity3d.com,2011:\r\n--- !u!29 &1\r\nOcclusionCullingSettings:\r\n  m_ObjectHideFlags: 0\r\n  serializedVersion: 2\r\n  m_OcclusionBakeSettings:\r\n    smallestOccluder: 5\r\n    smallestHole: 0.25\r\n    backfaceThreshold: 100\r\n  m_SceneGUID: 00000000000000000000000000000000\r\n  m_OcclusionCullingData: {fileID: 0}\r\n--- !u!104 &2\r\nRenderSettings:\r\n  m_ObjectHideFlags: 0\r\n  serializedVersion: 9\r\n  m_Fog: 0\r\n  m_FogColor: {r: 0.5, g: 0.5, b: 0.5, a: 1}\r\n  m_FogMode: 3\r\n  m_FogDensity: 0.01\r\n  m_LinearFogStart: 0\r\n  m_LinearFogEnd: 300\r\n  m_AmbientSkyColor: {r: 0.212, g: 0.227, b: 0.259, a: 1}\r\n  m_AmbientEquatorColor: {r: 0.114, g: 0.125, b: 0.133, a: 1}\r\n  m_AmbientGroundColor: {r: 0.047, g: 0.043, b: 0.035, a: 1}\r\n  m_AmbientIntensity: 1\r\n  m_AmbientMode: 3\r\n  m_SubtractiveShadowColor: {r: 0.42, g: 0.478, b: 0.627, a: 1}\r\n  m_SkyboxMaterial: {fileID: 0}\r\n  m_HaloStrength: 0.5\r\n  m_FlareStrength: 1\r\n  m_FlareFadeSpeed: 3\r\n  m_HaloTexture: {fileID: 0}\r\n  m_SpotCookie: {fileID: 10001, guid: 0000000000000000e000000000000000, type: 0}\r\n  m_DefaultReflectionMode: 0\r\n  m_DefaultReflectionResolution: 128\r\n  m_ReflectionBounces: 1\r\n  m_ReflectionIntensity: 1\r\n  m_CustomReflection: {fileID: 0}\r\n  m_Sun: {fileID: 0}\r\n  m_IndirectSpecularColor: {r: 0, g: 0, b: 0, a: 1}\r\n  m_UseRadianceAmbientProbe: 0\r\n--- !u!157 &3\r\nLightmapSettings:\r\n  m_ObjectHideFlags: 0\r\n  serializedVersion: 12\r\n  m_GIWorkflowMode: 1\r\n  m_GISettings:\r\n    serializedVersion: 2\r\n    m_BounceScale: 1\r\n    m_IndirectOutputScale: 1\r\n    m_AlbedoBoost: 1\r\n    m_EnvironmentLightingMode: 0\r\n    m_EnableBakedLightmaps: 0\r\n    m_EnableRealtimeLightmaps: 0\r\n  m_LightmapEditorSettings:\r\n    serializedVersion: 12\r\n    m_Resolution: 2\r\n    m_BakeResolution: 40\r\n    m_AtlasSize: 1024\r\n    m_AO: 0\r\n    m_AOMaxDistance: 1\r\n    m_CompAOExponent: 1\r\n    m_CompAOExponentDirect: 0\r\n    m_ExtractAmbientOcclusion: 0\r\n    m_Padding: 2\r\n    m_LightmapParameters: {fileID: 0}\r\n    m_LightmapsBakeMode: 1\r\n    m_TextureCompression: 1\r\n    m_FinalGather: 0\r\n    m_FinalGatherFiltering: 1\r\n    m_FinalGatherRayCount: 256\r\n    m_ReflectionCompression: 2\r\n    m_MixedBakeMode: 2\r\n    m_BakeBackend: 0\r\n    m_PVRSampling: 1\r\n    m_PVRDirectSampleCount: 32\r\n    m_PVRSampleCount: 500\r\n    m_PVRBounces: 2\r\n    m_PVREnvironmentSampleCount: 500\r\n    m_PVREnvironmentReferencePointCount: 2048\r\n    m_PVRFilteringMode: 2\r\n    m_PVRDenoiserTypeDirect: 0\r\n    m_PVRDenoiserTypeIndirect: 0\r\n    m_PVRDenoiserTypeAO: 0\r\n    m_PVRFilterTypeDirect: 0\r\n    m_PVRFilterTypeIndirect: 0\r\n    m_PVRFilterTypeAO: 0\r\n    m_PVREnvironmentMIS: 0\r\n    m_PVRCulling: 1\r\n    m_PVRFilteringGaussRadiusDirect: 1\r\n    m_PVRFilteringGaussRadiusIndirect: 5\r\n    m_PVRFilteringGaussRadiusAO: 2\r\n    m_PVRFilteringAtrousPositionSigmaDirect: 0.5\r\n    m_PVRFilteringAtrousPositionSigmaIndirect: 2\r\n    m_PVRFilteringAtrousPositionSigmaAO: 1\r\n    m_ExportTrainingData: 0\r\n    m_TrainingDataDestination: TrainingData\r\n    m_LightProbeSampleCountMultiplier: 4\r\n  m_LightingDataAsset: {fileID: 0}\r\n  m_LightingSettings: {fileID: 0}\r\n--- !u!196 &4\r\nNavMeshSettings:\r\n  serializedVersion: 2\r\n  m_ObjectHideFlags: 0\r\n  m_BuildSettings:\r\n    serializedVersion: 2\r\n    agentTypeID: 0\r\n    agentRadius: 0.5\r\n    agentHeight: 2\r\n    agentSlope: 45\r\n    agentClimb: 0.4\r\n    ledgeDropHeight: 0\r\n    maxJumpAcrossDistance: 0\r\n    minRegionArea: 2\r\n    manualCellSize: 0\r\n    cellSize: 0.16666667\r\n    manualTileSize: 0\r\n    tileSize: 256\r\n    accuratePlacement: 0\r\n    maxJobWorkers: 0\r\n    preserveTilesOutsideBounds: 0\r\n    debug:\r\n      m_Flags: 0\r\n  m_NavMeshData: {fileID: 0}\r\n--- !u!1 &26371619\r\nGameObject:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  serializedVersion: 6\r\n  m_Component:\r\n  - component: {fileID: 26371623}\r\n  - component: {fileID: 26371622}\r\n  - component: {fileID: 26371621}\r\n  - component: {fileID: 26371620}\r\n  - component: {fileID: 26371625}\r\n  - component: {fileID: 26371624}\r\n  m_Layer: 0\r\n  m_Name: Planet\r\n  m_TagString: Untagged\r\n  m_Icon: {fileID: 0}\r\n  m_NavMeshLayer: 0\r\n  m_StaticEditorFlags: 0\r\n  m_IsActive: 1\r\n--- !u!58 &26371620\r\nCircleCollider2D:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 26371619}\r\n  m_Enabled: 1\r\n  m_Density: 1\r\n  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}\r\n  m_IsTrigger: 1\r\n  m_UsedByEffector: 0\r\n  m_UsedByComposite: 0\r\n  m_Offset: {x: 0, y: 0}\r\n  serializedVersion: 2\r\n  m_Radius: 4\r\n--- !u!114 &26371621\r\nMonoBehaviour:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 26371619}\r\n  m_Enabled: 1\r\n  m_EditorHideFlags: 0\r\n  m_Script: {fileID: 11500000, guid: aaae4b655b120d945a576ac025c60386, type: 3}\r\n  m_Name: \r\n  m_EditorClassIdentifier: \r\n  mass: 2.5\r\n--- !u!212 &26371622\r\nSpriteRenderer:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 26371619}\r\n  m_Enabled: 1\r\n  m_CastShadows: 0\r\n  m_ReceiveShadows: 0\r\n  m_DynamicOccludee: 1\r\n  m_StaticShadowCaster: 0\r\n  m_MotionVectors: 1\r\n  m_LightProbeUsage: 1\r\n  m_ReflectionProbeUsage: 1\r\n  m_RayTracingMode: 0\r\n  m_RayTraceProcedural: 0\r\n  m_RenderingLayerMask: 1\r\n  m_RendererPriority: 0\r\n  m_Materials:\r\n  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}\r\n  m_StaticBatchInfo:\r\n    firstSubMesh: 0\r\n    subMeshCount: 0\r\n  m_StaticBatchRoot: {fileID: 0}\r\n  m_ProbeAnchor: {fileID: 0}\r\n  m_LightProbeVolumeOverride: {fileID: 0}\r\n  m_ScaleInLightmap: 1\r\n  m_ReceiveGI: 1\r\n  m_PreserveUVs: 0\r\n  m_IgnoreNormalsForChartDetection: 0\r\n  m_ImportantGI: 0\r\n  m_StitchLightmapSeams: 1\r\n  m_SelectedEditorRenderState: 0\r\n  m_MinimumChartSize: 4\r\n  m_AutoUVMaxDistance: 0.5\r\n  m_AutoUVMaxAngle: 89\r\n  m_LightmapParameters: {fileID: 0}\r\n  m_SortingLayerID: 0\r\n  m_SortingLayer: 0\r\n  m_SortingOrder: 0\r\n  m_Sprite: {fileID: -2413806693520163455, guid: 05ae7b6edb5ebe249a346f9b8684f05b, type: 3}\r\n  m_Color: {r: 1, g: 1, b: 1, a: 1}\r\n  m_FlipX: 0\r\n  m_FlipY: 0\r\n  m_DrawMode: 0\r\n  m_Size: {x: 1, y: 1}\r\n  m_AdaptiveModeThreshold: 0.5\r\n  m_SpriteTileMode: 0\r\n  m_WasSpriteAssigned: 1\r\n  m_MaskInteraction: 0\r\n  m_SpriteSortPoint: 0\r\n--- !u!4 &26371623\r\nTransform:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 26371619}\r\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\r\n  m_LocalPosition: {x: -5.3, y: -2.2, z: 0}\r\n  m_LocalScale: {x: 2.523067, y: 2.523067, z: 2.523067}\r\n  m_Children: []\r\n  m_Father: {fileID: 0}\r\n  m_RootOrder: 2\r\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\r\n--- !u!50 &26371624\r\nRigidbody2D:\r\n  serializedVersion: 4\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 26371619}\r\n  m_BodyType: 1\r\n  m_Simulated: 1\r\n  m_UseFullKinematicContacts: 0\r\n  m_UseAutoMass: 0\r\n  m_Mass: 1\r\n  m_LinearDrag: 0\r\n  m_AngularDrag: 0.05\r\n  m_GravityScale: 1\r\n  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}\r\n  m_Interpolate: 0\r\n  m_SleepingMode: 1\r\n  m_CollisionDetection: 0\r\n  m_Constraints: 0\r\n--- !u!58 &26371625\r\nCircleCollider2D:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 26371619}\r\n  m_Enabled: 1\r\n  m_Density: 1\r\n  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}\r\n  m_IsTrigger: 0\r\n  m_UsedByEffector: 0\r\n  m_UsedByComposite: 0\r\n  m_Offset: {x: 0, y: 0}\r\n  serializedVersion: 2\r\n  m_Radius: 0.5\r\n--- !u!1 &519420028\r\nGameObject:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  serializedVersion: 6\r\n  m_Component:\r\n  - component: {fileID: 519420032}\r\n  - component: {fileID: 519420031}\r\n  - component: {fileID: 519420029}\r\n  - component: {fileID: 519420030}\r\n  m_Layer: 0\r\n  m_Name: Main Camera\r\n  m_TagString: MainCamera\r\n  m_Icon: {fileID: 0}\r\n  m_NavMeshLayer: 0\r\n  m_StaticEditorFlags: 0\r\n  m_IsActive: 1\r\n--- !u!81 &519420029\r\nAudioListener:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 519420028}\r\n  m_Enabled: 1\r\n--- !u!114 &519420030\r\nMonoBehaviour:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 519420028}\r\n  m_Enabled: 1\r\n  m_EditorHideFlags: 0\r\n  m_Script: {fileID: 11500000, guid: d9775ca99634e874bbd0c7ec8c710bb4, type: 3}\r\n  m_Name: \r\n  m_EditorClassIdentifier: \r\n--- !u!20 &519420031\r\nCamera:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 519420028}\r\n  m_Enabled: 1\r\n  serializedVersion: 2\r\n  m_ClearFlags: 2\r\n  m_BackGroundColor: {r: 0.19215687, g: 0.3019608, b: 0.4745098, a: 0}\r\n  m_projectionMatrixMode: 1\r\n  m_GateFitMode: 2\r\n  m_FOVAxisMode: 0\r\n  m_SensorSize: {x: 36, y: 24}\r\n  m_LensShift: {x: 0, y: 0}\r\n  m_FocalLength: 50\r\n  m_NormalizedViewPortRect:\r\n    serializedVersion: 2\r\n    x: 0\r\n    y: 0\r\n    width: 1\r\n    height: 1\r\n  near clip plane: 0.3\r\n  far clip plane: 1000\r\n  field of view: 60\r\n  orthographic: 1\r\n  orthographic size: 5\r\n  m_Depth: -1\r\n  m_CullingMask:\r\n    serializedVersion: 2\r\n    m_Bits: 4294967295\r\n  m_RenderingPath: -1\r\n  m_TargetTexture: {fileID: 0}\r\n  m_TargetDisplay: 0\r\n  m_TargetEye: 0\r\n  m_HDR: 1\r\n  m_AllowMSAA: 0\r\n  m_AllowDynamicResolution: 0\r\n  m_ForceIntoRT: 0\r\n  m_OcclusionCulling: 0\r\n  m_StereoConvergence: 10\r\n  m_StereoSeparation: 0.022\r\n--- !u!4 &519420032\r\nTransform:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 519420028}\r\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\r\n  m_LocalPosition: {x: 0, y: 0, z: -10}\r\n  m_LocalScale: {x: 1, y: 1, z: 1}\r\n  m_Children: []\r\n  m_Father: {fileID: 0}\r\n  m_RootOrder: 0\r\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\r\n--- !u!1 &746627997\r\nGameObject:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  serializedVersion: 6\r\n  m_Component:\r\n  - component: {fileID: 746628000}\r\n  - component: {fileID: 746627999}\r\n  - component: {fileID: 746627998}\r\n  - component: {fileID: 746628001}\r\n  - component: {fileID: 746628002}\r\n  m_Layer: 0\r\n  m_Name: Player\r\n  m_TagString: Player\r\n  m_Icon: {fileID: 0}\r\n  m_NavMeshLayer: 0\r\n  m_StaticEditorFlags: 0\r\n  m_IsActive: 1\r\n--- !u!114 &746627998\r\nMonoBehaviour:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 746627997}\r\n  m_Enabled: 1\r\n  m_EditorHideFlags: 0\r\n  m_Script: {fileID: 11500000, guid: 1508d2bb57f4b4944af08e0e7007bb40, type: 3}\r\n  m_Name: \r\n  m_EditorClassIdentifier: \r\n  startThrust: 2\r\n  startFuel: 1000\r\n  fuelConsumption: 1\r\n--- !u!212 &746627999\r\nSpriteRenderer:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 746627997}\r\n  m_Enabled: 1\r\n  m_CastShadows: 0\r\n  m_ReceiveShadows: 0\r\n  m_DynamicOccludee: 1\r\n  m_StaticShadowCaster: 0\r\n  m_MotionVectors: 1\r\n  m_LightProbeUsage: 1\r\n  m_ReflectionProbeUsage: 1\r\n  m_RayTracingMode: 0\r\n  m_RayTraceProcedural: 0\r\n  m_RenderingLayerMask: 1\r\n  m_RendererPriority: 0\r\n  m_Materials:\r\n  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}\r\n  m_StaticBatchInfo:\r\n    firstSubMesh: 0\r\n    subMeshCount: 0\r\n  m_StaticBatchRoot: {fileID: 0}\r\n  m_ProbeAnchor: {fileID: 0}\r\n  m_LightProbeVolumeOverride: {fileID: 0}\r\n  m_ScaleInLightmap: 1\r\n  m_ReceiveGI: 1\r\n  m_PreserveUVs: 0\r\n  m_IgnoreNormalsForChartDetection: 0\r\n  m_ImportantGI: 0\r\n  m_StitchLightmapSeams: 1\r\n  m_SelectedEditorRenderState: 0\r\n  m_MinimumChartSize: 4\r\n  m_AutoUVMaxDistance: 0.5\r\n  m_AutoUVMaxAngle: 89\r\n  m_LightmapParameters: {fileID: 0}\r\n  m_SortingLayerID: 0\r\n  m_SortingLayer: 0\r\n  m_SortingOrder: 0\r\n  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}\r\n  m_Color: {r: 1, g: 1, b: 1, a: 1}\r\n  m_FlipX: 0\r\n  m_FlipY: 0\r\n  m_DrawMode: 0\r\n  m_Size: {x: 1, y: 1}\r\n  m_AdaptiveModeThreshold: 0.5\r\n  m_SpriteTileMode: 0\r\n  m_WasSpriteAssigned: 1\r\n  m_MaskInteraction: 0\r\n  m_SpriteSortPoint: 0\r\n--- !u!4 &746628000\r\nTransform:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 746627997}\r\n  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}\r\n  m_LocalPosition: {x: 2.92, y: 0.053474844, z: 0}\r\n  m_LocalScale: {x: 1, y: 1, z: 1}\r\n  m_Children: []\r\n  m_Father: {fileID: 0}\r\n  m_RootOrder: 1\r\n  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}\r\n--- !u!50 &746628001\r\nRigidbody2D:\r\n  serializedVersion: 4\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 746627997}\r\n  m_BodyType: 0\r\n  m_Simulated: 1\r\n  m_UseFullKinematicContacts: 0\r\n  m_UseAutoMass: 1\r\n  m_Mass: 1\r\n  m_LinearDrag: 0\r\n  m_AngularDrag: 0.05\r\n  m_GravityScale: 0\r\n  m_Material: {fileID: 0}\r\n  m_Interpolate: 0\r\n  m_SleepingMode: 1\r\n  m_CollisionDetection: 0\r\n  m_Constraints: 0\r\n--- !u!61 &746628002\r\nBoxCollider2D:\r\n  m_ObjectHideFlags: 0\r\n  m_CorrespondingSourceObject: {fileID: 0}\r\n  m_PrefabInstance: {fileID: 0}\r\n  m_PrefabAsset: {fileID: 0}\r\n  m_GameObject: {fileID: 746627997}\r\n  m_Enabled: 1\r\n  m_Density: 1\r\n  m_Material: {fileID: 0}\r\n  m_IsTrigger: 0\r\n  m_UsedByEffector: 0\r\n  m_UsedByComposite: 0\r\n  m_Offset: {x: 0, y: 0}\r\n  m_SpriteTilingProperty:\r\n    border: {x: 0, y: 0, z: 0, w: 0}\r\n    pivot: {x: 0.5, y: 0.5}\r\n    oldSize: {x: 1, y: 1}\r\n    newSize: {x: 1, y: 1}\r\n    adaptiveTilingThreshold: 0.5\r\n    drawMode: 0\r\n    adaptiveTiling: 0\r\n  m_AutoTiling: 0\r\n  serializedVersion: 2\r\n  m_Size: {x: 1, y: 1}\r\n  m_EdgeRadius: 0\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scenes/SampleScene.unity b/Assets/Scenes/SampleScene.unity
+--- a/Assets/Scenes/SampleScene.unity	
++++ b/Assets/Scenes/SampleScene.unity	
+@@ -139,7 +139,7 @@
+   - component: {fileID: 26371624}
+   m_Layer: 0
+   m_Name: Planet
+-  m_TagString: Untagged
++  m_TagString: Planet
+   m_Icon: {fileID: 0}
+   m_NavMeshLayer: 0
+   m_StaticEditorFlags: 0
+@@ -172,7 +172,8 @@
+   m_Script: {fileID: 11500000, guid: aaae4b655b120d945a576ac025c60386, type: 3}
+   m_Name: 
+   m_EditorClassIdentifier: 
+-  mass: 2.5
++  mass: 5.5
++  rotationSpeed: 12
+ --- !u!212 &26371622
+ SpriteRenderer:
+   m_ObjectHideFlags: 0
+@@ -234,7 +235,7 @@
+   m_GameObject: {fileID: 26371619}
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+   m_LocalPosition: {x: -5.3, y: -2.2, z: 0}
+-  m_LocalScale: {x: 2.523067, y: 2.523067, z: 2.523067}
++  m_LocalScale: {x: 5.883699, y: 5.883699, z: 5.883699}
+   m_Children: []
+   m_Father: {fileID: 0}
+   m_RootOrder: 2
+@@ -288,6 +289,7 @@
+   - component: {fileID: 519420031}
+   - component: {fileID: 519420029}
+   - component: {fileID: 519420030}
++  - component: {fileID: 519420033}
+   m_Layer: 0
+   m_Name: Main Camera
+   m_TagString: MainCamera
+@@ -342,7 +344,7 @@
+   far clip plane: 1000
+   field of view: 60
+   orthographic: 1
+-  orthographic size: 5
++  orthographic size: 8
+   m_Depth: -1
+   m_CullingMask:
+     serializedVersion: 2
+@@ -372,6 +374,18 @@
+   m_Father: {fileID: 0}
+   m_RootOrder: 0
+   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!114 &519420033
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 519420028}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: 9d4eb5ac2decdf64cab00af7f4ddd1e6, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
+ --- !u!1 &746627997
+ GameObject:
+   m_ObjectHideFlags: 0
+@@ -404,7 +418,8 @@
+   m_Script: {fileID: 11500000, guid: 1508d2bb57f4b4944af08e0e7007bb40, type: 3}
+   m_Name: 
+   m_EditorClassIdentifier: 
+-  startThrust: 2
++  startThrust: 2.5
++  jumpForce: 100
+   startFuel: 1000
+   fuelConsumption: 1
+ --- !u!212 &746627999
+@@ -468,7 +483,7 @@
+   m_GameObject: {fileID: 746627997}
+   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+   m_LocalPosition: {x: 2.92, y: 0.053474844, z: 0}
+-  m_LocalScale: {x: 1, y: 1, z: 1}
++  m_LocalScale: {x: 0.6, y: 0.6, z: 0.6}
+   m_Children: []
+   m_Father: {fileID: 0}
+   m_RootOrder: 1
+@@ -485,7 +500,7 @@
+   m_Simulated: 1
+   m_UseFullKinematicContacts: 0
+   m_UseAutoMass: 1
+-  m_Mass: 1
++  m_Mass: 0.36
+   m_LinearDrag: 0
+   m_AngularDrag: 0.05
+   m_GravityScale: 0
+@@ -520,3 +535,619 @@
+   serializedVersion: 2
+   m_Size: {x: 1, y: 1}
+   m_EdgeRadius: 0
++--- !u!1 &1221749818
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 1221749824}
++  - component: {fileID: 1221749823}
++  - component: {fileID: 1221749822}
++  - component: {fileID: 1221749821}
++  - component: {fileID: 1221749820}
++  - component: {fileID: 1221749819}
++  m_Layer: 0
++  m_Name: Planet (3)
++  m_TagString: Planet
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!50 &1221749819
++Rigidbody2D:
++  serializedVersion: 4
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1221749818}
++  m_BodyType: 1
++  m_Simulated: 1
++  m_UseFullKinematicContacts: 0
++  m_UseAutoMass: 0
++  m_Mass: 1
++  m_LinearDrag: 0
++  m_AngularDrag: 0.05
++  m_GravityScale: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_Interpolate: 0
++  m_SleepingMode: 1
++  m_CollisionDetection: 0
++  m_Constraints: 0
++--- !u!58 &1221749820
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1221749818}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 0
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 0.5
++--- !u!58 &1221749821
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1221749818}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 1
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 4
++--- !u!114 &1221749822
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1221749818}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: aaae4b655b120d945a576ac025c60386, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  mass: 10
++  rotationSpeed: 12
++--- !u!212 &1221749823
++SpriteRenderer:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1221749818}
++  m_Enabled: 1
++  m_CastShadows: 0
++  m_ReceiveShadows: 0
++  m_DynamicOccludee: 1
++  m_StaticShadowCaster: 0
++  m_MotionVectors: 1
++  m_LightProbeUsage: 1
++  m_ReflectionProbeUsage: 1
++  m_RayTracingMode: 0
++  m_RayTraceProcedural: 0
++  m_RenderingLayerMask: 1
++  m_RendererPriority: 0
++  m_Materials:
++  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
++  m_StaticBatchInfo:
++    firstSubMesh: 0
++    subMeshCount: 0
++  m_StaticBatchRoot: {fileID: 0}
++  m_ProbeAnchor: {fileID: 0}
++  m_LightProbeVolumeOverride: {fileID: 0}
++  m_ScaleInLightmap: 1
++  m_ReceiveGI: 1
++  m_PreserveUVs: 0
++  m_IgnoreNormalsForChartDetection: 0
++  m_ImportantGI: 0
++  m_StitchLightmapSeams: 1
++  m_SelectedEditorRenderState: 0
++  m_MinimumChartSize: 4
++  m_AutoUVMaxDistance: 0.5
++  m_AutoUVMaxAngle: 89
++  m_LightmapParameters: {fileID: 0}
++  m_SortingLayerID: 0
++  m_SortingLayer: 0
++  m_SortingOrder: 0
++  m_Sprite: {fileID: -2413806693520163455, guid: 05ae7b6edb5ebe249a346f9b8684f05b, type: 3}
++  m_Color: {r: 1, g: 1, b: 1, a: 1}
++  m_FlipX: 0
++  m_FlipY: 0
++  m_DrawMode: 0
++  m_Size: {x: 1, y: 1}
++  m_AdaptiveModeThreshold: 0.5
++  m_SpriteTileMode: 0
++  m_WasSpriteAssigned: 1
++  m_MaskInteraction: 0
++  m_SpriteSortPoint: 0
++--- !u!4 &1221749824
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1221749818}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: 29, y: 38.1, z: 0}
++  m_LocalScale: {x: 3.7228427, y: 3.7228427, z: 3.7228427}
++  m_Children: []
++  m_Father: {fileID: 0}
++  m_RootOrder: 5
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!1 &1352749606
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 1352749612}
++  - component: {fileID: 1352749611}
++  - component: {fileID: 1352749610}
++  - component: {fileID: 1352749609}
++  - component: {fileID: 1352749608}
++  - component: {fileID: 1352749607}
++  m_Layer: 0
++  m_Name: Planet (2)
++  m_TagString: Planet
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!50 &1352749607
++Rigidbody2D:
++  serializedVersion: 4
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1352749606}
++  m_BodyType: 1
++  m_Simulated: 1
++  m_UseFullKinematicContacts: 0
++  m_UseAutoMass: 0
++  m_Mass: 1
++  m_LinearDrag: 0
++  m_AngularDrag: 0.05
++  m_GravityScale: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_Interpolate: 0
++  m_SleepingMode: 1
++  m_CollisionDetection: 0
++  m_Constraints: 0
++--- !u!58 &1352749608
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1352749606}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 0
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 0.5
++--- !u!58 &1352749609
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1352749606}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 1
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 4
++--- !u!114 &1352749610
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1352749606}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: aaae4b655b120d945a576ac025c60386, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  mass: 4.5
++  rotationSpeed: -8
++--- !u!212 &1352749611
++SpriteRenderer:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1352749606}
++  m_Enabled: 1
++  m_CastShadows: 0
++  m_ReceiveShadows: 0
++  m_DynamicOccludee: 1
++  m_StaticShadowCaster: 0
++  m_MotionVectors: 1
++  m_LightProbeUsage: 1
++  m_ReflectionProbeUsage: 1
++  m_RayTracingMode: 0
++  m_RayTraceProcedural: 0
++  m_RenderingLayerMask: 1
++  m_RendererPriority: 0
++  m_Materials:
++  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
++  m_StaticBatchInfo:
++    firstSubMesh: 0
++    subMeshCount: 0
++  m_StaticBatchRoot: {fileID: 0}
++  m_ProbeAnchor: {fileID: 0}
++  m_LightProbeVolumeOverride: {fileID: 0}
++  m_ScaleInLightmap: 1
++  m_ReceiveGI: 1
++  m_PreserveUVs: 0
++  m_IgnoreNormalsForChartDetection: 0
++  m_ImportantGI: 0
++  m_StitchLightmapSeams: 1
++  m_SelectedEditorRenderState: 0
++  m_MinimumChartSize: 4
++  m_AutoUVMaxDistance: 0.5
++  m_AutoUVMaxAngle: 89
++  m_LightmapParameters: {fileID: 0}
++  m_SortingLayerID: 0
++  m_SortingLayer: 0
++  m_SortingOrder: 0
++  m_Sprite: {fileID: -2413806693520163455, guid: 05ae7b6edb5ebe249a346f9b8684f05b, type: 3}
++  m_Color: {r: 1, g: 1, b: 1, a: 1}
++  m_FlipX: 0
++  m_FlipY: 0
++  m_DrawMode: 0
++  m_Size: {x: 1, y: 1}
++  m_AdaptiveModeThreshold: 0.5
++  m_SpriteTileMode: 0
++  m_WasSpriteAssigned: 1
++  m_MaskInteraction: 0
++  m_SpriteSortPoint: 0
++--- !u!4 &1352749612
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1352749606}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: 28, y: 5.5, z: 0}
++  m_LocalScale: {x: 3.7228427, y: 3.7228427, z: 3.7228427}
++  m_Children: []
++  m_Father: {fileID: 0}
++  m_RootOrder: 4
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!1 &1634216592
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 1634216598}
++  - component: {fileID: 1634216597}
++  - component: {fileID: 1634216596}
++  - component: {fileID: 1634216595}
++  - component: {fileID: 1634216594}
++  - component: {fileID: 1634216593}
++  m_Layer: 0
++  m_Name: Planet (4)
++  m_TagString: Planet
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!50 &1634216593
++Rigidbody2D:
++  serializedVersion: 4
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1634216592}
++  m_BodyType: 1
++  m_Simulated: 1
++  m_UseFullKinematicContacts: 0
++  m_UseAutoMass: 0
++  m_Mass: 1
++  m_LinearDrag: 0
++  m_AngularDrag: 0.05
++  m_GravityScale: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_Interpolate: 0
++  m_SleepingMode: 1
++  m_CollisionDetection: 0
++  m_Constraints: 0
++--- !u!58 &1634216594
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1634216592}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 0
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 0.5
++--- !u!58 &1634216595
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1634216592}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 1
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 4
++--- !u!114 &1634216596
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1634216592}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: aaae4b655b120d945a576ac025c60386, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  mass: 100
++  rotationSpeed: 12
++--- !u!212 &1634216597
++SpriteRenderer:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1634216592}
++  m_Enabled: 1
++  m_CastShadows: 0
++  m_ReceiveShadows: 0
++  m_DynamicOccludee: 1
++  m_StaticShadowCaster: 0
++  m_MotionVectors: 1
++  m_LightProbeUsage: 1
++  m_ReflectionProbeUsage: 1
++  m_RayTracingMode: 0
++  m_RayTraceProcedural: 0
++  m_RenderingLayerMask: 1
++  m_RendererPriority: 0
++  m_Materials:
++  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
++  m_StaticBatchInfo:
++    firstSubMesh: 0
++    subMeshCount: 0
++  m_StaticBatchRoot: {fileID: 0}
++  m_ProbeAnchor: {fileID: 0}
++  m_LightProbeVolumeOverride: {fileID: 0}
++  m_ScaleInLightmap: 1
++  m_ReceiveGI: 1
++  m_PreserveUVs: 0
++  m_IgnoreNormalsForChartDetection: 0
++  m_ImportantGI: 0
++  m_StitchLightmapSeams: 1
++  m_SelectedEditorRenderState: 0
++  m_MinimumChartSize: 4
++  m_AutoUVMaxDistance: 0.5
++  m_AutoUVMaxAngle: 89
++  m_LightmapParameters: {fileID: 0}
++  m_SortingLayerID: 0
++  m_SortingLayer: 0
++  m_SortingOrder: 0
++  m_Sprite: {fileID: -2413806693520163455, guid: 05ae7b6edb5ebe249a346f9b8684f05b, type: 3}
++  m_Color: {r: 1, g: 1, b: 1, a: 1}
++  m_FlipX: 0
++  m_FlipY: 0
++  m_DrawMode: 0
++  m_Size: {x: 1, y: 1}
++  m_AdaptiveModeThreshold: 0.5
++  m_SpriteTileMode: 0
++  m_WasSpriteAssigned: 1
++  m_MaskInteraction: 0
++  m_SpriteSortPoint: 0
++--- !u!4 &1634216598
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1634216592}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: 42.1, y: -61.6, z: 0}
++  m_LocalScale: {x: 12.667345, y: 12.667345, z: 12.667345}
++  m_Children: []
++  m_Father: {fileID: 0}
++  m_RootOrder: 6
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
++--- !u!1 &1786518334
++GameObject:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  serializedVersion: 6
++  m_Component:
++  - component: {fileID: 1786518340}
++  - component: {fileID: 1786518339}
++  - component: {fileID: 1786518338}
++  - component: {fileID: 1786518337}
++  - component: {fileID: 1786518336}
++  - component: {fileID: 1786518335}
++  m_Layer: 0
++  m_Name: Planet (1)
++  m_TagString: Planet
++  m_Icon: {fileID: 0}
++  m_NavMeshLayer: 0
++  m_StaticEditorFlags: 0
++  m_IsActive: 1
++--- !u!50 &1786518335
++Rigidbody2D:
++  serializedVersion: 4
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1786518334}
++  m_BodyType: 1
++  m_Simulated: 1
++  m_UseFullKinematicContacts: 0
++  m_UseAutoMass: 0
++  m_Mass: 1
++  m_LinearDrag: 0
++  m_AngularDrag: 0.05
++  m_GravityScale: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_Interpolate: 0
++  m_SleepingMode: 1
++  m_CollisionDetection: 0
++  m_Constraints: 0
++--- !u!58 &1786518336
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1786518334}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 0
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 0.5
++--- !u!58 &1786518337
++CircleCollider2D:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1786518334}
++  m_Enabled: 1
++  m_Density: 1
++  m_Material: {fileID: 6200000, guid: ec319a1159b137d499b7be562ee1ea23, type: 2}
++  m_IsTrigger: 1
++  m_UsedByEffector: 0
++  m_UsedByComposite: 0
++  m_Offset: {x: 0, y: 0}
++  serializedVersion: 2
++  m_Radius: 4
++--- !u!114 &1786518338
++MonoBehaviour:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1786518334}
++  m_Enabled: 1
++  m_EditorHideFlags: 0
++  m_Script: {fileID: 11500000, guid: aaae4b655b120d945a576ac025c60386, type: 3}
++  m_Name: 
++  m_EditorClassIdentifier: 
++  mass: 6
++  rotationSpeed: 10
++--- !u!212 &1786518339
++SpriteRenderer:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1786518334}
++  m_Enabled: 1
++  m_CastShadows: 0
++  m_ReceiveShadows: 0
++  m_DynamicOccludee: 1
++  m_StaticShadowCaster: 0
++  m_MotionVectors: 1
++  m_LightProbeUsage: 1
++  m_ReflectionProbeUsage: 1
++  m_RayTracingMode: 0
++  m_RayTraceProcedural: 0
++  m_RenderingLayerMask: 1
++  m_RendererPriority: 0
++  m_Materials:
++  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
++  m_StaticBatchInfo:
++    firstSubMesh: 0
++    subMeshCount: 0
++  m_StaticBatchRoot: {fileID: 0}
++  m_ProbeAnchor: {fileID: 0}
++  m_LightProbeVolumeOverride: {fileID: 0}
++  m_ScaleInLightmap: 1
++  m_ReceiveGI: 1
++  m_PreserveUVs: 0
++  m_IgnoreNormalsForChartDetection: 0
++  m_ImportantGI: 0
++  m_StitchLightmapSeams: 1
++  m_SelectedEditorRenderState: 0
++  m_MinimumChartSize: 4
++  m_AutoUVMaxDistance: 0.5
++  m_AutoUVMaxAngle: 89
++  m_LightmapParameters: {fileID: 0}
++  m_SortingLayerID: 0
++  m_SortingLayer: 0
++  m_SortingOrder: 0
++  m_Sprite: {fileID: -2413806693520163455, guid: 05ae7b6edb5ebe249a346f9b8684f05b, type: 3}
++  m_Color: {r: 1, g: 1, b: 1, a: 1}
++  m_FlipX: 0
++  m_FlipY: 0
++  m_DrawMode: 0
++  m_Size: {x: 1, y: 1}
++  m_AdaptiveModeThreshold: 0.5
++  m_SpriteTileMode: 0
++  m_WasSpriteAssigned: 1
++  m_MaskInteraction: 0
++  m_SpriteSortPoint: 0
++--- !u!4 &1786518340
++Transform:
++  m_ObjectHideFlags: 0
++  m_CorrespondingSourceObject: {fileID: 0}
++  m_PrefabInstance: {fileID: 0}
++  m_PrefabAsset: {fileID: 0}
++  m_GameObject: {fileID: 1786518334}
++  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
++  m_LocalPosition: {x: -1.2, y: 31, z: 0}
++  m_LocalScale: {x: 5.6690235, y: 5.6690235, z: 5.6690235}
++  m_Children: []
++  m_Father: {fileID: 0}
++  m_RootOrder: 3
++  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+Index: Assets/Scripts/Services/EventBus/EventBus.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System;\r\nusing System.Collections.Generic;\r\nusing UnityEngine.Events;\r\n\r\nnamespace Services\r\n{\r\n    /// <summary>\r\n    /// Шина событий, паттерн, который позволяет инвертировать зависимости\r\n    /// Каждый класс сам решает на какие события ему реагировать\r\n    /// </summary>\r\n    public class EventBus : IService\r\n    {\r\n        private readonly Dictionary<EventList, UnityEvent> _events = new Dictionary<EventList, UnityEvent>();\r\n\r\n        public EventBus()\r\n        {\r\n            foreach (EventList eventType in Enum.GetValues(typeof(EventList)))\r\n            {\r\n                _events[eventType] = new UnityEvent();\r\n            }\r\n        }\r\n        \r\n        /// <summary>\r\n        /// Подписаться на событие\r\n        /// </summary>\r\n        /// <param name=\"eventId\">Индефикатор события</param>\r\n        /// <param name=\"action\">Метод, который должен быть вызван вместе с событием</param>\r\n        public void Subscribe(EventList eventId, UnityAction action)\r\n        {\r\n            _events[eventId].AddListener(action);\r\n        }\r\n\r\n        /// <summary>\r\n        /// Вызвать событие\r\n        /// </summary>\r\n        /// <param name=\"eventId\">Индефикатор события</param>\r\n        public void CallEvent(EventList eventId)\r\n        {\r\n            _events[eventId].Invoke();\r\n        }\r\n    }\r\n}
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Services/EventBus/EventBus.cs b/Assets/Scripts/Services/EventBus/EventBus.cs
+--- a/Assets/Scripts/Services/EventBus/EventBus.cs	
++++ b/Assets/Scripts/Services/EventBus/EventBus.cs	
+@@ -29,6 +29,16 @@
+         {
+             _events[eventId].AddListener(action);
+         }
++        
++        /// <summary>
++        /// Отписаться от события
++        /// </summary>
++        /// <param name="eventId">Индефикатор события</param>
++        /// <param name="action">Метод, который нужно отписать</param>
++        public void UnSubscribe(EventList eventId, UnityAction action)
++        {
++            _events[eventId].RemoveListener(action);
++        }
+ 
+         /// <summary>
+         /// Вызвать событие
+Index: Assets/Scripts/Models/PlanetModel.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using System.Collections.Generic;\r\nusing UnityEngine;\r\n\r\nnamespace Models\r\n{\r\n    public class PlanetModel : MonoBehaviour\r\n    {\r\n        private readonly HashSet<Rigidbody2D> _affectedBodies = new HashSet<Rigidbody2D>();\r\n        \r\n        [Tooltip(\"Масса планеты\")]\r\n        [SerializeField]\r\n        private float mass;\r\n        \r\n        private void OnTriggerEnter2D(Collider2D other)\r\n        {\r\n            if (other.attachedRigidbody != null)\r\n            {\r\n                _affectedBodies.Add(other.attachedRigidbody);\r\n            }\r\n        }\r\n        \r\n        private void OnTriggerExit2D(Collider2D other)\r\n        {\r\n            if(other.attachedRigidbody != null)\r\n            {\r\n                _affectedBodies.Remove(other.attachedRigidbody);\r\n            }\r\n        }\r\n        \r\n        private void FixedUpdate()\r\n        {\r\n            foreach (var body in _affectedBodies)\r\n            {\r\n                var position = new Vector2(transform.position.x, transform.position.y);\r\n                var directionToPlanet = (position - body.position).normalized;\r\n                \r\n                var distanceSqr = (position - body.position).sqrMagnitude; \r\n                var strength = 10 * mass * body.mass / distanceSqr;\r\n                body.AddForce(directionToPlanet * strength);\r\n            }\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Models/PlanetModel.cs b/Assets/Scripts/Models/PlanetModel.cs
+--- a/Assets/Scripts/Models/PlanetModel.cs	
++++ b/Assets/Scripts/Models/PlanetModel.cs	
+@@ -6,11 +6,16 @@
+     public class PlanetModel : MonoBehaviour
+     {
+         private readonly HashSet<Rigidbody2D> _affectedBodies = new HashSet<Rigidbody2D>();
+-        
+-        [Tooltip("Масса планеты")]
++        private readonly HashSet<GameObject> _collisionBodies = new HashSet<GameObject>();
++
++        [Header("Масса планеты")]
+         [SerializeField]
+         private float mass;
+         
++        [Header("Скорость вращения планеты")]
++        [SerializeField]
++        private float rotationSpeed;
++
+         private void OnTriggerEnter2D(Collider2D other)
+         {
+             if (other.attachedRigidbody != null)
+@@ -18,7 +23,12 @@
+                 _affectedBodies.Add(other.attachedRigidbody);
+             }
+         }
+-        
++
++        private void OnCollisionEnter2D(Collision2D other)
++        {
++            _collisionBodies.Add(other.gameObject);
++        }
++
+         private void OnTriggerExit2D(Collider2D other)
+         {
+             if(other.attachedRigidbody != null)
+@@ -27,17 +37,30 @@
+             }
+         }
+         
++        private void OnCollisionExit2D(Collision2D other)
++        {
++            _collisionBodies.Remove(other.gameObject);
++        }
++        
+         private void FixedUpdate()
+         {
++            transform.Rotate(0, 0, rotationSpeed * Time.deltaTime);
+             foreach (var body in _affectedBodies)
+             {
++                if(_collisionBodies.Contains(body.gameObject)) continue;
++                
+                 var position = new Vector2(transform.position.x, transform.position.y);
+                 var directionToPlanet = (position - body.position).normalized;
+-                
+-                var distanceSqr = (position - body.position).sqrMagnitude; 
+-                var strength = 10 * mass * body.mass / distanceSqr;
+-                body.AddForce(directionToPlanet * strength);
+-            }
++
++                var strength = CalculateStrength(body, position);
++                body.AddForce(directionToPlanet * strength);
++            }
++        }
++
++        private float CalculateStrength(Rigidbody2D body, Vector2 position)
++        {
++            var distanceSqr = (position - body.position).sqrMagnitude; 
++            return 10 * (mass * body.mass) / distanceSqr;
+         }
+     }
+ }
+Index: Assets/Scripts/Models/PlayerModel.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.BaseRevisionTextPatchEP
+<+>using Services;\r\nusing UnityEngine;\r\nusing UnityEngine.Serialization;\r\n\r\nnamespace Models\r\n{\r\n    public class PlayerModel : MonoBehaviour\r\n    {\r\n        public float Thrust { get; set; }\r\n        public float Fuel { get; set; }\r\n\r\n        public float MaxFuel { get; set; }\r\n\r\n        private Camera _camera;\r\n        private Rigidbody2D _rb;\r\n\r\n        //Инспектор\r\n        [Tooltip(\"Мощность двигателя\")]\r\n        [SerializeField]\r\n        private float startThrust;\r\n        \r\n        [Tooltip(\"Начальное топливо\")]\r\n        [SerializeField]\r\n        private float startFuel;\r\n\r\n        [Tooltip(\"Расход топлива в секунду\")]\r\n        [SerializeField]\r\n        private float fuelConsumption;\r\n\r\n        private void Start()\r\n        {\r\n            _camera = Camera.main;\r\n            _rb = transform.GetComponent<Rigidbody2D>();\r\n            Fuel = startFuel;\r\n            MaxFuel = startFuel;\r\n            Thrust = startThrust;\r\n            var services = ServiceLocator.Current;\r\n        }\r\n        \r\n        private void FixedUpdate()\r\n        {\r\n            \r\n            Rotate();\r\n            MoveForward();\r\n        }\r\n\r\n        private void Rotate()\r\n        {\r\n            var mousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);\r\n            var direction = new Vector2(\r\n                mousePosition.x - transform.position.x,\r\n                mousePosition.y - transform.position.y\r\n            );\r\n\r\n            transform.up = direction;\r\n        }\r\n\r\n        // ReSharper disable Unity.PerformanceAnalysis\r\n        private void MoveForward()\r\n        {\r\n            var moveForwardKey = KeyCode.W; // по умолчанию используем W\r\n    \r\n            if (PlayerPrefs.HasKey(\"MoveForwardKey\"))\r\n            {\r\n                var keyName = PlayerPrefs.GetString(\"MoveForwardKey\");\r\n                moveForwardKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keyName);\r\n            }\r\n\r\n            if (Fuel <= 0)\r\n            {\r\n                Fuel = 0;\r\n                Fuel = MaxFuel;\r\n                return;\r\n            }\r\n            \r\n            if (!Input.GetKey(moveForwardKey)) return;\r\n            //Debug.Log(Fuel);\r\n            Fuel -= fuelConsumption * Time.deltaTime;\r\n            _rb.AddForce(transform.up * Thrust);\r\n        }\r\n    }\r\n}\r\n
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Models/PlayerModel.cs b/Assets/Scripts/Models/PlayerModel.cs
+--- a/Assets/Scripts/Models/PlayerModel.cs	
++++ b/Assets/Scripts/Models/PlayerModel.cs	
+@@ -1,29 +1,40 @@
++using System;
+ using Services;
+ using UnityEngine;
+-using UnityEngine.Serialization;
+ 
+ namespace Models
+ {
++    [RequireComponent(typeof(Rigidbody2D))]
+     public class PlayerModel : MonoBehaviour
+     {
+         public float Thrust { get; set; }
+         public float Fuel { get; set; }
+-
+         public float MaxFuel { get; set; }
++        public float JumpForce { get; set; }
++        public bool IsOnPlanet { get; private set; } = false;
+ 
+         private Camera _camera;
+         private Rigidbody2D _rb;
++        private Vector2 _contactPoint;
++        private GameObject _planet;
+ 
+         //Инспектор
+-        [Tooltip("Мощность двигателя")]
++        [Header("Эти параметры невозможно изменить когда игра запущена", order = 0)]
++        [Header("Мощность двигателя")]
+         [SerializeField]
++        [Range(0, 15)]
+         private float startThrust;
+         
+-        [Tooltip("Начальное топливо")]
++        [Header("Импульс при старте с планеты")]
++        [SerializeField]
++        private float jumpForce;
++        
++        [Space]
++        [Header("Начальное топливо")]
+         [SerializeField]
+         private float startFuel;
+ 
+-        [Tooltip("Расход топлива в секунду")]
++        [Header("Расход топлива в секунду")]
+         [SerializeField]
+         private float fuelConsumption;
+ 
+@@ -34,15 +45,38 @@
+             Fuel = startFuel;
+             MaxFuel = startFuel;
+             Thrust = startThrust;
++            JumpForce = jumpForce;
+             var services = ServiceLocator.Current;
+         }
+         
+         private void FixedUpdate()
+         {
+-            
+-            Rotate();
+-            MoveForward();
++            if (IsOnPlanet)
++            {
++                StayOnPlanet();
++                Jump();
++            }
++            else
++            {
++                Rotate();
++                MoveForward();
++            }
+         }
++
++        private void OnCollisionEnter2D(Collision2D other)
++        {
++            if (!other.gameObject.CompareTag("Planet")) return; 
++            IsOnPlanet = true;
++            var contact = other.GetContact(0);
++            _planet = other.gameObject;
++            _contactPoint = _planet.transform.InverseTransformPoint(contact.point);
++        }
++
++        private void OnCollisionExit2D(Collision2D other)
++        {
++            if (!other.gameObject.CompareTag("Planet")) return; 
++            IsOnPlanet = false;
++        }
+ 
+         private void Rotate()
+         {
+@@ -54,8 +88,7 @@
+ 
+             transform.up = direction;
+         }
+-
+-        // ReSharper disable Unity.PerformanceAnalysis
++        
+         private void MoveForward()
+         {
+             var moveForwardKey = KeyCode.W; // по умолчанию используем W
+@@ -63,7 +96,7 @@
+             if (PlayerPrefs.HasKey("MoveForwardKey"))
+             {
+                 var keyName = PlayerPrefs.GetString("MoveForwardKey");
+-                moveForwardKey = (KeyCode)System.Enum.Parse(typeof(KeyCode), keyName);
++                moveForwardKey = (KeyCode)Enum.Parse(typeof(KeyCode), keyName);
+             }
+ 
+             if (Fuel <= 0)
+@@ -74,9 +107,32 @@
+             }
+             
+             if (!Input.GetKey(moveForwardKey)) return;
+-            //Debug.Log(Fuel);
+             Fuel -= fuelConsumption * Time.deltaTime;
+             _rb.AddForce(transform.up * Thrust);
+         }
++
++        private void StayOnPlanet()
++        {
++            transform.position =
++                _planet.transform.TransformPoint(
++                    new Vector3(_contactPoint.x, _contactPoint.y, 0));
++            
++            var directionToCenter =  _planet.transform.position - transform.position;
++            transform.up = -directionToCenter.normalized;
++        }
++
++        private void Jump()
++        {
++            var jumpKey = KeyCode.Space;
++            if (PlayerPrefs.HasKey("jumpKey"))
++            {
++                var keyName = PlayerPrefs.GetString("jumpKey");
++                jumpKey = (KeyCode)Enum.Parse(typeof(KeyCode), keyName);
++            }
++
++            if (!Input.GetKey(jumpKey)) return;
++            _rb.AddForce(transform.up * JumpForce);
++            IsOnPlanet = false;
++        }
+     }
+ }
+Index: Assets/Scripts/Views/CameraController.cs
+IDEA additional info:
+Subsystem: com.intellij.openapi.diff.impl.patch.CharsetEP
+<+>UTF-8
+===================================================================
+diff --git a/Assets/Scripts/Views/CameraController.cs b/Assets/Scripts/Views/CameraController.cs
+new file mode 100644
+--- /dev/null	
++++ b/Assets/Scripts/Views/CameraController.cs	
+@@ -0,0 +1,32 @@
++using Services;
++using UnityEngine;
++
++namespace Views
++{
++    public class CameraController : MonoBehaviour
++    {
++        private Transform _player;
++        private Rigidbody2D _playerRb;
++        private readonly float _smoothSpeed = 0.1f;
++        private Vector3 _velocity = Vector3.zero;
++        private bool _isPlayerRbNotNull;
++        private Camera _camera;
++
++        private void Start()
++        {
++            _camera = Camera.main;
++            var services = ServiceLocator.Current;
++            _player = services.Get<PlayerService>().Player.transform;
++            _playerRb = _player.GetComponent<Rigidbody2D>();
++        }
++
++        private void Update()
++        {
++            var targetPosition = _player.position;
++
++            targetPosition = new Vector3(targetPosition.x, targetPosition.y, -10);
++
++            transform.position = targetPosition;
++        }
++    }
++}
