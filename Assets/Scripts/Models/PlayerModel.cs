@@ -5,6 +5,7 @@ using Services;
 using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
+using static UnityEngine.ParticleSystem;
 
 namespace Models
 {
@@ -22,6 +23,8 @@ namespace Models
         private Rigidbody2D _rb;
         private Vector2 _contactPoint;
         private GameObject _planet;
+        private ParticleSystem.Particle[] _particles;
+        private ParticleSystem Smoke;
 
         //Инспектор
         [Header("Эти параметры невозможно изменить когда игра запущена", order = 0)]
@@ -56,6 +59,10 @@ namespace Models
             JumpForce = jumpForce;
             MaxSpeed = maxSpeed;
             var services = ServiceLocator.Current;
+            Smoke = GetComponent<ParticleSystem>();
+            var emission = Smoke.emission;
+            emission.enabled = false;
+            _particles = new ParticleSystem.Particle[Smoke.main.maxParticles];
         }
         
         private void FixedUpdate()
@@ -123,11 +130,21 @@ namespace Models
         private void CheckPlanets()
         {
             var checkPlanetsKey = KeyCode.E; // по умолчанию используем E
-
+            
             if (Input.GetKey(checkPlanetsKey))
-                ClosestPlanet().EmissionStart();
+            {
+                Vector3 closestPlanetPosition = ClosestPlanet().transform.position;
+                transform.up = closestPlanetPosition - transform.position;
+                var emission = Smoke.emission;
+                emission.enabled = true;
+            }
             else
-                ClosestPlanet().EmissionStop();
+            {
+                var emission = Smoke.emission;
+                Smoke.Clear();
+                emission.enabled = false;
+            }
+                
         }
         private void StayOnPlanet()
         {
