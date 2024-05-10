@@ -30,7 +30,8 @@ namespace Views
 
             targetPosition += new Vector3(targetPosition.x, targetPosition.y, -10);
 
-            transform.position = targetPosition;
+            transform.position = _player.position;
+            transform.position += new Vector3(0, 0, -10);
         }
     }
 }

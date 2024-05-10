@@ -16,6 +16,9 @@ namespace Models
         [SerializeField]
         private float rotationSpeed;
 
+        [Header("Наличие пришельцев")]
+        [SerializeField]
+        public bool aliensAvailability;
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.attachedRigidbody != null)
