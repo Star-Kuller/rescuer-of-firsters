@@ -51,7 +51,6 @@ namespace Models
             Thrust = startThrust;
             JumpForce = jumpForce;
             MaxSpeed = maxSpeed;
-            var services = ServiceLocator.Current;
         }
         
         private void FixedUpdate()
@@ -71,6 +70,7 @@ namespace Models
         private void OnCollisionEnter2D(Collision2D other)
         {
             if (!other.gameObject.CompareTag("Planet")) return; 
+            if(IsOnPlanet) return;
             IsOnPlanet = true;
             var contact = other.GetContact(0);
             _planet = other.gameObject;
