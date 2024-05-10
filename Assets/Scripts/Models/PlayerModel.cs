@@ -23,8 +23,7 @@ namespace Models
         private Rigidbody2D _rb;
         private Vector2 _contactPoint;
         private GameObject _planet;
-        private ParticleSystem.Particle[] _particles;
-        private ParticleSystem Smoke;
+        private ParticleModel _particalModel;
 
         //Инспектор
         [Header("Эти параметры невозможно изменить когда игра запущена", order = 0)]
@@ -32,11 +31,11 @@ namespace Models
         [SerializeField]
         [Range(0, 15)]
         private float startThrust;
-        
+
         [Header("Импульс при старте с планеты")]
         [SerializeField]
         private float jumpForce;
-        
+
         [Space]
         [Header("Начальное топливо")]
         [SerializeField]
@@ -45,7 +44,7 @@ namespace Models
         [Header("Расход топлива в секунду")]
         [SerializeField]
         private float fuelConsumption;
-        [Tooltip("Расход топлива в секунду")]
+        [Tooltip("Максимальная Скорость")]
         [SerializeField]
         private float maxSpeed;
 
@@ -59,12 +58,9 @@ namespace Models
             JumpForce = jumpForce;
             MaxSpeed = maxSpeed;
             var services = ServiceLocator.Current;
-            Smoke = GetComponent<ParticleSystem>();
-            var emission = Smoke.emission;
-            emission.enabled = false;
-            _particles = new ParticleSystem.Particle[Smoke.main.maxParticles];
+            _particalModel = FindObjectOfType<ParticleModel>();
         }
-        
+
         private void FixedUpdate()
         {
             if (IsOnPlanet)
@@ -82,7 +78,7 @@ namespace Models
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (!other.gameObject.CompareTag("Planet")) return; 
+            if (!other.gameObject.CompareTag("Planet")) return;
             IsOnPlanet = true;
             var contact = other.GetContact(0);
             _planet = other.gameObject;
@@ -91,7 +87,7 @@ namespace Models
 
         private void OnCollisionExit2D(Collision2D other)
         {
-            if (!other.gameObject.CompareTag("Planet")) return; 
+            if (!other.gameObject.CompareTag("Planet")) return;
             IsOnPlanet = false;
         }
         private void Rotate()
@@ -104,11 +100,11 @@ namespace Models
 
             transform.up = direction;
         }
-        
+
         private void MoveForward()
         {
             var moveForwardKey = KeyCode.W; // по умолчанию используем W
-    
+
             if (PlayerPrefs.HasKey("MoveForwardKey"))
             {
                 var keyName = PlayerPrefs.GetString("MoveForwardKey");
@@ -122,7 +118,7 @@ namespace Models
                 Fuel = MaxFuel;
                 return;
             }
-            
+
             if (!Input.GetKey(moveForwardKey)) return;
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
@@ -130,29 +126,25 @@ namespace Models
         private void CheckPlanets()
         {
             var checkPlanetsKey = KeyCode.E; // по умолчанию используем E
-            
+
             if (Input.GetKey(checkPlanetsKey))
             {
-                Vector3 closestPlanetPosition = ClosestPlanet().transform.position;
-                transform.up = closestPlanetPosition - transform.position;
-                var emission = Smoke.emission;
-                emission.enabled = true;
+                _particalModel.EmmitionContinue(ClosestPlanet().transform.position - transform.position);
             }
             else
             {
-                var emission = Smoke.emission;
-                Smoke.Clear();
-                emission.enabled = false;
+                Debug.Log(_particalModel);
+                _particalModel.EmmitionStop();
             }
-                
+
         }
         private void StayOnPlanet()
         {
             transform.position =
                 _planet.transform.TransformPoint(
                     new Vector3(_contactPoint.x, _contactPoint.y, 0));
-            
-            var directionToCenter =  _planet.transform.position - transform.position;
+
+            var directionToCenter = _planet.transform.position - transform.position;
             transform.up = -directionToCenter.normalized;
         }
 
@@ -172,6 +164,14 @@ namespace Models
         private PlanetModel ClosestPlanet()
         {
             PlanetModel closestPlanet = FindObjectsOfType<PlanetModel>()[0];
+            foreach (var body in FindObjectsOfType<PlanetModel>())
+            {
+                if (body.aliensAvailability)
+                {
+                    closestPlanet = body;
+                    break;
+                }
+            }
             Vector3 closestDistance = closestPlanet.transform.position;
             foreach (var body in FindObjectsOfType<PlanetModel>())
             {
@@ -180,8 +180,6 @@ namespace Models
                     closestDistance = body.transform.position;
                     closestPlanet = body;
                 }
-                else
-                    body.EmissionStop();
             }
             return closestPlanet;
         }
