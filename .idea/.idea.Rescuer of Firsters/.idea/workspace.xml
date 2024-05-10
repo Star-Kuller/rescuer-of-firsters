@@ -4,10 +4,8 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.Rescuer of Firsters/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scenes/SampleScene.unity" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Views/CameraController.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Views/CameraController.cs" afterDir="false" />
+    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="little fix">
+      <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -17,13 +15,15 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="Camera" />
+        <entry key="$PROJECT_DIR$" value="NewCamera" />
       </map>
     </option>
   </component>
   <component name="HighlightingSettingsPerFile">
     <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scenes/SampleScene.unity" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/Assets/Scripts/Models/PlanetModel.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock://C:/MyProjects/rescuer of firsters/Assets/Scripts/Views/CameraController.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/Library/PackageCache/com.unity.visualscripting@1.6.1/Runtime/VisualScripting.Core/Ensure/EnsureThat.Objects.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/2a59c552c85f43a9bcaaf39eb0bf8b0d144600/ba/29b2f03c/Component.cs" root0="SKIP_HIGHLIGHTING" />
   </component>
   <component name="MetaFilesCheckinStateConfiguration" checkMetaFiles="true" />
@@ -99,7 +99,7 @@
       <updated>1715249596976</updated>
       <workItem from="1715249599194" duration="27448000" />
       <workItem from="1715340868012" duration="629000" />
-      <workItem from="1715342065248" duration="2382000" />
+      <workItem from="1715342065248" duration="14765000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -165,7 +165,31 @@
       <option name="project" value="LOCAL" />
       <updated>1715295004958</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="Update Scene">
+      <option name="closed" value="true" />
+      <created>1715346544274</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1715346544274</updated>
+    </task>
+    <task id="LOCAL-00010" summary="Update Camera">
+      <option name="closed" value="true" />
+      <created>1715358907394</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1715358907394</updated>
+    </task>
+    <task id="LOCAL-00011" summary="little fix">
+      <option name="closed" value="true" />
+      <created>1715358972539</created>
+      <option name="number" value="00011" />
+      <option name="presentableId" value="LOCAL-00011" />
+      <option name="project" value="LOCAL" />
+      <updated>1715358972539</updated>
+    </task>
+    <option name="localTasksCounter" value="12" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -179,7 +203,19 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="FILTERS">
+                <map>
+                  <entry key="branch">
+                    <value>
+                      <list>
+                        <option value="NewCamera" />
+                      </list>
+                    </value>
+                  </entry>
+                </map>
+              </option>
+            </State>
           </value>
         </entry>
       </map>
@@ -193,6 +229,9 @@
     <MESSAGE value="Camera WIP" />
     <MESSAGE value="Fixed planet gravity" />
     <MESSAGE value="Added landing and take off from planet" />
-    <option name="LAST_COMMIT_MESSAGE" value="Added landing and take off from planet" />
+    <MESSAGE value="Update Scene" />
+    <MESSAGE value="Update Camera" />
+    <MESSAGE value="little fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="little fix" />
   </component>
 </project>

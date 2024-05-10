@@ -23,8 +23,8 @@ namespace Models
         private Rigidbody2D _rb;
         private Vector2 _contactPoint;
         private GameObject _planet;
-        private ParticleModel _particalModel;
-
+        
+        
         //Инспектор
         [Header("Эти параметры невозможно изменить когда игра запущена", order = 0)]
         [Header("Мощность двигателя")]
@@ -44,6 +44,7 @@ namespace Models
         [Header("Расход топлива в секунду")]
         [SerializeField]
         private float fuelConsumption;
+        
         [Tooltip("Максимальная Скорость")]
         [SerializeField]
         private float maxSpeed;
@@ -57,8 +58,6 @@ namespace Models
             Thrust = startThrust;
             JumpForce = jumpForce;
             MaxSpeed = maxSpeed;
-            var services = ServiceLocator.Current;
-            _particalModel = FindObjectOfType<ParticleModel>();
         }
 
         private void FixedUpdate()
@@ -73,7 +72,6 @@ namespace Models
                 Rotate();
                 MoveForward();
             }
-            CheckPlanets();
         }
 
         private void OnCollisionEnter2D(Collision2D other)
@@ -123,21 +121,7 @@ namespace Models
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
         }
-        private void CheckPlanets()
-        {
-            var checkPlanetsKey = KeyCode.E; // по умолчанию используем E
-
-            if (Input.GetKey(checkPlanetsKey))
-            {
-                _particalModel.EmmitionContinue(ClosestPlanet().transform.position - transform.position);
-            }
-            else
-            {
-                Debug.Log(_particalModel);
-                _particalModel.EmmitionStop();
-            }
-
-        }
+        
         private void StayOnPlanet()
         {
             transform.position =
@@ -160,28 +144,6 @@ namespace Models
             if (!Input.GetKey(jumpKey)) return;
             _rb.AddForce(transform.up * JumpForce);
             IsOnPlanet = false;
-        }
-        private PlanetModel ClosestPlanet()
-        {
-            PlanetModel closestPlanet = FindObjectsOfType<PlanetModel>()[0];
-            foreach (var body in FindObjectsOfType<PlanetModel>())
-            {
-                if (body.aliensAvailability)
-                {
-                    closestPlanet = body;
-                    break;
-                }
-            }
-            Vector3 closestDistance = closestPlanet.transform.position;
-            foreach (var body in FindObjectsOfType<PlanetModel>())
-            {
-                if ((closestDistance - transform.position).magnitude >= (body.transform.position - transform.position).magnitude && body.aliensAvailability)
-                {
-                    closestDistance = body.transform.position;
-                    closestPlanet = body;
-                }
-            }
-            return closestPlanet;
         }
     }
 }
