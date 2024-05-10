@@ -7,6 +7,8 @@ namespace Models
     {
         private readonly HashSet<Rigidbody2D> _affectedBodies = new HashSet<Rigidbody2D>();
         private readonly HashSet<GameObject> _collisionBodies = new HashSet<GameObject>();
+        public ParticleSystem.EmissionModule emission;
+        public ParticleSystem Smoke;
 
         [Header("Масса планеты")]
         [SerializeField]
@@ -16,6 +18,16 @@ namespace Models
         [SerializeField]
         private float rotationSpeed;
 
+        [Header("Наличие пришельцев")]
+        [SerializeField]
+        public bool aliensAvailability;
+
+        private void Start()
+        {
+            Smoke = GetComponent<ParticleSystem>();
+            var emission = Smoke.emission;
+            emission.enabled = false;
+        }
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.attachedRigidbody != null)
@@ -56,7 +68,18 @@ namespace Models
                 body.AddForce(directionToPlanet * strength);
             }
         }
-
+        public void EmissionStart()
+        {
+            var emission = Smoke.emission;
+            emission.enabled = true;
+            Debug.Log("start");
+        }
+        public void EmissionStop()
+        {
+            var emission = Smoke.emission;
+            emission.enabled = false;
+            Debug.Log("stop");
+        }
         private float CalculateStrength(Rigidbody2D body, Vector2 position)
         {
             var distanceSqr = (position - body.position).sqrMagnitude; 

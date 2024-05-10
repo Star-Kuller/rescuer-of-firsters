@@ -1,6 +1,10 @@
 using System;
+using System.Collections.Generic;
+using System.Linq;
 using Services;
+using Unity.VisualScripting;
 using UnityEngine;
+using UnityEngine.UIElements;
 
 namespace Models
 {
@@ -66,6 +70,7 @@ namespace Models
                 Rotate();
                 MoveForward();
             }
+            CheckPlanets();
         }
 
         private void OnCollisionEnter2D(Collision2D other)
@@ -82,7 +87,6 @@ namespace Models
             if (!other.gameObject.CompareTag("Planet")) return; 
             IsOnPlanet = false;
         }
-
         private void Rotate()
         {
             var mousePosition = _camera.ScreenToWorldPoint(Input.mousePosition);
@@ -116,7 +120,15 @@ namespace Models
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
         }
+        private void CheckPlanets()
+        {
+            var checkPlanetsKey = KeyCode.E; // по умолчанию используем E
 
+            if (Input.GetKey(checkPlanetsKey))
+                ClosestPlanet().EmissionStart();
+            else
+                ClosestPlanet().EmissionStop();
+        }
         private void StayOnPlanet()
         {
             transform.position =
@@ -139,6 +151,22 @@ namespace Models
             if (!Input.GetKey(jumpKey)) return;
             _rb.AddForce(transform.up * JumpForce);
             IsOnPlanet = false;
+        }
+        private PlanetModel ClosestPlanet()
+        {
+            PlanetModel closestPlanet = FindObjectsOfType<PlanetModel>()[0];
+            Vector3 closestDistance = closestPlanet.transform.position;
+            foreach (var body in FindObjectsOfType<PlanetModel>())
+            {
+                if ((closestDistance - transform.position).magnitude >= (body.transform.position - transform.position).magnitude && body.aliensAvailability)
+                {
+                    closestDistance = body.transform.position;
+                    closestPlanet = body;
+                }
+                else
+                    body.EmissionStop();
+            }
+            return closestPlanet;
         }
     }
 }
