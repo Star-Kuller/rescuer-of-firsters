@@ -38,7 +38,7 @@ namespace Models
         [Header("Расход топлива в секунду")]
         [SerializeField]
         private float fuelConsumption;
-        [Tooltip("Расход топлива в секунду")]
+        [Tooltip("Максимальная скорость")]
         [SerializeField]
         private float maxSpeed;
 
