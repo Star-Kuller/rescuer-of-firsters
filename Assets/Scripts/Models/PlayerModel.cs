@@ -1,11 +1,6 @@
 using System;
-using System.Collections.Generic;
-using System.Linq;
 using Services;
-using Unity.VisualScripting;
 using UnityEngine;
-using UnityEngine.UIElements;
-using static UnityEngine.ParticleSystem;
 
 namespace Models
 {
@@ -76,7 +71,8 @@ namespace Models
 
         private void OnCollisionEnter2D(Collision2D other)
         {
-            if (!other.gameObject.CompareTag("Planet")) return;
+            if (!other.gameObject.CompareTag("Planet")) return; 
+            if(IsOnPlanet) return;
             IsOnPlanet = true;
             var contact = other.GetContact(0);
             _planet = other.gameObject;
@@ -85,7 +81,7 @@ namespace Models
 
         private void OnCollisionExit2D(Collision2D other)
         {
-            if (!other.gameObject.CompareTag("Planet")) return;
+            if (!other.gameObject.CompareTag("Planet")) return; 
             IsOnPlanet = false;
         }
         private void Rotate()

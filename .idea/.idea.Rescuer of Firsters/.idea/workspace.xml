@@ -4,7 +4,7 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="little fix">
+    <list default="true" id="7c81e9f9-6dbc-4efb-8809-8fa238829baf" name="Changes" comment="Update Camera">
       <change beforePath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" beforeDir="false" afterPath="$PROJECT_DIR$/Assets/Scripts/Models/PlayerModel.cs" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -15,7 +15,7 @@
   <component name="Git.Settings">
     <option name="RECENT_BRANCH_BY_REPOSITORY">
       <map>
-        <entry key="$PROJECT_DIR$" value="NewCamera" />
+        <entry key="$PROJECT_DIR$" value="master" />
       </map>
     </option>
   </component>
@@ -99,7 +99,7 @@
       <updated>1715249596976</updated>
       <workItem from="1715249599194" duration="27448000" />
       <workItem from="1715340868012" duration="629000" />
-      <workItem from="1715342065248" duration="14765000" />
+      <workItem from="1715342065248" duration="14451000" />
     </task>
     <task id="LOCAL-00001" summary="First Commit">
       <option name="closed" value="true" />
@@ -181,15 +181,7 @@
       <option name="project" value="LOCAL" />
       <updated>1715358907394</updated>
     </task>
-    <task id="LOCAL-00011" summary="little fix">
-      <option name="closed" value="true" />
-      <created>1715358972539</created>
-      <option name="number" value="00011" />
-      <option name="presentableId" value="LOCAL-00011" />
-      <option name="project" value="LOCAL" />
-      <updated>1715358972539</updated>
-    </task>
-    <option name="localTasksCounter" value="12" />
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -231,7 +223,6 @@
     <MESSAGE value="Added landing and take off from planet" />
     <MESSAGE value="Update Scene" />
     <MESSAGE value="Update Camera" />
-    <MESSAGE value="little fix" />
-    <option name="LAST_COMMIT_MESSAGE" value="little fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update Camera" />
   </component>
 </project>
