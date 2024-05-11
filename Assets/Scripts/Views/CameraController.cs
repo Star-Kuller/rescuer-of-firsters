@@ -29,7 +29,7 @@ namespace Views
         [Header("Время плавного перехода при приземлении на планету")]
         [SerializeField]
         public float smoothTime;
-
+        
         private void Start()
         {
             _camera = Camera.main;
