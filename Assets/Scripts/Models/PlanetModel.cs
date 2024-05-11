@@ -25,9 +25,18 @@ namespace Models
         [SerializeField]
         public bool animalAvailability;
 
+        [Header("Можно ли на этой планете заправиться")]
+        [SerializeField]
+        public bool isFuel;
+
         [Header("Можно ли на этой планете сдать животых")]
         [SerializeField]
         public bool isHomePlanet;
+
+        [Header("картинка животного")]
+        [SerializeField]
+        [Range(0, 9)]
+        public int spriteNumber;
         
         private void Start()
         {

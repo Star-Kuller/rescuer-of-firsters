@@ -28,6 +28,7 @@ namespace Models
             set => jumpForce = value;
         }
         public bool IsOnPlanet { get; private set; } = false;
+        public bool isMoving;
         public GameObject OnPlanet => _planet;
         public float MaxSpeed
         {
@@ -38,9 +39,12 @@ namespace Models
         private Camera _camera;
         private Rigidbody2D _rb;
         private Vector2 _contactPoint;
-        private GameObject _planet;
+        public GameObject _planet;
         private bool _isGameStarted;
         private EventBus _eventBus;
+        public int AnimalCount;
+        public String animalData;
+        public bool isWin = false;
         
         
         //Инспектор
@@ -69,6 +73,9 @@ namespace Models
         [Tooltip("Максимальная Скорость")]
         [SerializeField]
         private float maxSpeed;
+        [Tooltip("Всего животных")]
+        [SerializeField]
+        public int animalMaxCount;
 
         private void Start()
         {
@@ -90,6 +97,8 @@ namespace Models
                 Rotate();
                 MoveForward();
             }
+            animalData = AnimalCount + "/" + animalMaxCount;
+            Debug.Log(animalData);
         }
 
         private void OnCollisionEnter2D(Collision2D other)
@@ -100,9 +109,6 @@ namespace Models
             var contact = other.GetContact(0);
             _planet = other.gameObject;
             _contactPoint = _planet.transform.InverseTransformPoint(contact.point);
-            _eventBus.CallEvent(EventList.LandedOnPlanet);
-            if(_planet.GetComponent<PlanetModel>().isHomePlanet)
-                _eventBus.CallEvent(EventList.LandedOnHomePlanet);
         }
 
         private void OnCollisionExit2D(Collision2D other)
@@ -137,10 +143,15 @@ namespace Models
             if (Fuel <= 0)
             {
                 Fuel = 0;
+                //Fuel = MaxFuel;
                 return;
             }
 
-            if (!Input.GetKey(moveForwardKey)) return;
+            if (!Input.GetKey(moveForwardKey)){
+                isMoving = false;
+                return;
+                 }
+            isMoving = true;
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
 
@@ -151,12 +162,16 @@ namespace Models
         
         private void StayOnPlanet()
         {
+            isMoving = false;
             transform.position =
                 _planet.transform.TransformPoint(
                     new Vector3(_contactPoint.x, _contactPoint.y, 0));
 
             var directionToCenter = _planet.transform.position - transform.position;
             transform.up = -directionToCenter.normalized;
+            if(AnimalCount >= animalMaxCount && _planet.GetComponent<PlanetModel>().isHomePlanet){
+                isWin = true;
+            }
         }
 
         private void Jump()
