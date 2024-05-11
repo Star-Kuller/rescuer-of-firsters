@@ -7,17 +7,40 @@ namespace Models
     [RequireComponent(typeof(Rigidbody2D))]
     public class PlayerModel : MonoBehaviour
     {
-        public float Thrust { get; set; }
-        public float Fuel { get; set; }
-        public float MaxFuel { get; set; }
-        public float JumpForce { get; set; }
+        public float Thrust
+        {
+            get => thrust;
+            set => thrust = value;
+        }
+        public float Fuel
+        {
+            get => fuel;
+            set => fuel = value;
+        }
+        public float MaxFuel
+        {
+            get => MaxFuel;
+            set => MaxFuel = value;
+        }
+        public float JumpForce
+        {
+            get => jumpForce;
+            set => jumpForce = value;
+        }
         public bool IsOnPlanet { get; private set; } = false;
-        public float MaxSpeed { get; set; }
+        public GameObject OnPlanet => _planet;
+        public float MaxSpeed
+        {
+            get => maxSpeed;
+            set => maxSpeed = value;
+        }
 
         private Camera _camera;
         private Rigidbody2D _rb;
         private Vector2 _contactPoint;
         private GameObject _planet;
+        private bool _isGameStarted;
+        private EventBus _eventBus;
         
         
         //Инспектор
@@ -25,16 +48,15 @@ namespace Models
         [Header("Мощность двигателя")]
         [SerializeField]
         [Range(0, 15)]
-        private float startThrust;
+        private float thrust;
 
         [Header("Импульс при старте с планеты")]
         [SerializeField]
         private float jumpForce;
-
-        [Space]
-        [Header("Начальное топливо")]
+        
+        [Header("Топливо")]
         [SerializeField]
-        private float startFuel;
+        private float fuel;
 
         [Header("Расход топлива в секунду")]
         [SerializeField]
@@ -48,11 +70,8 @@ namespace Models
         {
             _camera = Camera.main;
             _rb = transform.GetComponent<Rigidbody2D>();
-            Fuel = startFuel;
-            MaxFuel = startFuel;
-            Thrust = startThrust;
-            JumpForce = jumpForce;
-            MaxSpeed = maxSpeed;
+            var serviceLocator = ServiceLocator.Current;
+            _eventBus = serviceLocator.Get<EventBus>();
         }
 
         private void FixedUpdate()
@@ -77,12 +96,16 @@ namespace Models
             var contact = other.GetContact(0);
             _planet = other.gameObject;
             _contactPoint = _planet.transform.InverseTransformPoint(contact.point);
+            _eventBus.CallEvent(EventList.LandedOnPlanet);
+            if(_planet.GetComponent<PlanetModel>().isHomePlanet)
+                _eventBus.CallEvent(EventList.LandedOnHomePlanet);
         }
 
         private void OnCollisionExit2D(Collision2D other)
         {
             if (!other.gameObject.CompareTag("Planet")) return; 
             IsOnPlanet = false;
+            _eventBus.CallEvent(EventList.StartFromPlanet);
         }
         private void Rotate()
         {
@@ -116,6 +139,10 @@ namespace Models
             if (!Input.GetKey(moveForwardKey)) return;
             Fuel -= fuelConsumption * Time.deltaTime;
             _rb.AddForce(transform.up * Thrust);
+
+            if (_isGameStarted) return;
+            _eventBus.CallEvent(EventList.GameStart);
+            _isGameStarted = true;
         }
         
         private void StayOnPlanet()
@@ -140,6 +167,10 @@ namespace Models
             if (!Input.GetKey(jumpKey)) return;
             _rb.AddForce(transform.up * JumpForce);
             IsOnPlanet = false;
+            
+            if (_isGameStarted) return;
+            _eventBus.CallEvent(EventList.GameStart);
+            _isGameStarted = true;
         }
     }
 }

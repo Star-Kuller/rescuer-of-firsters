@@ -1,5 +1,8 @@
+using System;
 using System.Collections.Generic;
+using Services;
 using UnityEngine;
+using UnityEngine.Serialization;
 
 namespace Models
 {
@@ -7,6 +10,7 @@ namespace Models
     {
         private readonly HashSet<Rigidbody2D> _affectedBodies = new HashSet<Rigidbody2D>();
         private readonly HashSet<GameObject> _collisionBodies = new HashSet<GameObject>();
+        private EventBus _eventBus;
 
         [Header("Масса планеты")]
         [SerializeField]
@@ -16,10 +20,21 @@ namespace Models
         [SerializeField]
         private float rotationSpeed;
 
+        [FormerlySerializedAs("aliensAvailability")]
         [Header("Наличие потеряного животного")]
         [SerializeField]
-        public bool aliensAvailability;
+        public bool animalAvailability;
+
+        [Header("Можно ли на этой планете сдать животых")]
+        [SerializeField]
+        public bool isHomePlanet;
         
+        private void Start()
+        {
+            var services = ServiceLocator.Current;
+            _eventBus = services.Get<EventBus>();
+        }
+
         private void OnTriggerEnter2D(Collider2D other)
         {
             if (other.attachedRigidbody != null)

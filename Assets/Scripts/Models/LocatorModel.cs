@@ -29,7 +29,6 @@ namespace Models
         private void FixedUpdate()
         {
             CheckPlanets();
-            transform.position = _player.position;
         }
     
         private void CheckPlanets()
@@ -70,7 +69,7 @@ namespace Models
             var distanceToClosestPlanet = float.MaxValue;
             
             foreach (var body in
-                     _planets.Where(x => x.Key.aliensAvailability))
+                     _planets.Where(x => x.Key.animalAvailability))
             {
                 var distanceToBody = (body.Value.position - _player.position).magnitude;
                 if (distanceToBody < distanceToClosestPlanet)

@@ -1,5 +1,6 @@
 using System;
 using System.Collections.Generic;
+using UnityEngine;
 using UnityEngine.Events;
 
 namespace Services
@@ -40,12 +41,14 @@ namespace Services
             _events[eventId].RemoveListener(action);
         }
 
+        // ReSharper disable Unity.PerformanceAnalysis
         /// <summary>
         /// Вызвать событие
         /// </summary>
         /// <param name="eventId">Индефикатор события</param>
         public void CallEvent(EventList eventId)
         {
+            Debug.Log("Вызвано событие " + eventId);
             _events[eventId].Invoke();
         }
     }

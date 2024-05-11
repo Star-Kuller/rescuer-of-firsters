@@ -15,6 +15,11 @@ namespace Services
             var services = ServiceLocator.Current;
         }
 
+        public void Refuel()
+        {
+            _model.Fuel = _model.MaxFuel;
+        }
+
         public bool TryAddFuel(float amount)
         {
             if (amount < 0)
