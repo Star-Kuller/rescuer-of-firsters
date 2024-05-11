@@ -19,8 +19,8 @@ namespace Models
         }
         public float MaxFuel
         {
-            get => MaxFuel;
-            set => MaxFuel = value;
+            get => maxFuel;
+            set => maxFuel = value;
         }
         public float JumpForce
         {
@@ -57,7 +57,11 @@ namespace Models
         [Header("Топливо")]
         [SerializeField]
         private float fuel;
-
+        
+        [Header("Максимальное количество топлива")]
+        [SerializeField]
+        private float maxFuel;
+        
         [Header("Расход топлива в секунду")]
         [SerializeField]
         private float fuelConsumption;
@@ -129,10 +133,10 @@ namespace Models
             }
             if (_rb.velocity.magnitude > MaxSpeed)
                 _rb.velocity = _rb.velocity.normalized * MaxSpeed;
+            
             if (Fuel <= 0)
             {
                 Fuel = 0;
-                Fuel = MaxFuel;
                 return;
             }
 
